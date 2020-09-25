@@ -1,0 +1,39 @@
+FROM node:10
+
+# RUN apt-get update
+# RUN apt-get install yarn -y
+
+ENV DATABASE_CLIENT postgres
+ENV DATABASE_NAME strapi
+ENV DATABASE_HOST 10.149.13.34
+ENV DATABASE_PORT 5432
+ENV DATABASE_USERNAME strapi
+ENV DATABASE_PASSWORD strapi 
+ENV DATABASE_SSL false
+ENV NODE_ENV production
+
+WORKDIR /srv
+VOLUME /srv
+
+# COPY ./module ./module
+
+RUN npm install -g strapi
+
+WORKDIR /srv/app
+
+COPY ./Strapi .
+
+WORKDIR /srv/app
+
+COPY ./entrypoint.sh /srv/app/entrypoint.sh
+
+ENTRYPOINT ["/srv/app/entrypoint.sh"]
+
+# RUN npm install
+
+# COPY ./init.sh /temp/init.sh
+# RUN chmod +x /temp/init.sh && /temp/init.sh
+
+# RUN npm install
+
+CMD ["yarn", "develop"]

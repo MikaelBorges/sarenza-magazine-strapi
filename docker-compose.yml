@@ -1,0 +1,65 @@
+version: "3.8"
+services:
+  strapidb:
+    image: sarenza/strapidb:1.0.0
+    container_name: strapidb
+    restart: always
+    build:
+      context: ./database
+      dockerfile: Dockerfile.postgresql
+      args:
+        buildno: 1
+    environment:
+      - POSTGRES_PASSWORD=azertyuiop
+    ports:
+      - 5432:5432
+    volumes:
+        - strapidb:/var/lib/postgresql
+    networks:
+      - strapi
+  strapi:
+    container_name: strapi
+    image: sarenza/strapi:1.0.0
+    stdin_open: true # docker run -i
+    tty: true # docker run -t
+    build:
+      context: ./strapi
+      dockerfile: Dockerfile.strapi
+      args:
+        buildno: 1
+    depends_on:
+      - "strapidb"
+    environment:
+      - DATABASE_HOST=strapidb
+      - NODE_ENV=development
+    ports:
+      - 3337:1337
+    networks:
+      - strapi
+
+  adminer:
+    container_name: adminer
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+    networks:
+      - strapi
+  pgadmin:
+    container_name: pgadmin
+    image: dpage/pgadmin4
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=ylorho@sarenza.com
+      - PGADMIN_DEFAULT_PASSWORD=azertyuiop
+      # - PGADMIN_ENABLE_TLS=false
+    ports:
+      - 8081:57598
+      - 70:80
+      - 433:443
+    networks:
+      - strapi
+networks:
+  strapi:
+volumes:
+    strapidb:
+      driver: local
