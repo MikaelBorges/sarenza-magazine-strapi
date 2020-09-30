@@ -1,0 +1,124 @@
+{
+    "routes": [
+        {
+            "method": "GET",
+            "path": "/",
+            "handler": "import-content.index",
+            "config": {
+                "policies": []
+            }
+        },
+        {
+            "method": "DELETE",
+            "path": "/:importId",
+            "handler": "import-content.delete",
+            "config": {
+                "policies": []
+            }
+        },
+        {
+            "method": "POST",
+            "path": "/preAnalyzeImportFile",
+            "handler": "import-content.preAnalyzeImportFile",
+            "config": {
+                "policies": []
+            }
+        },
+        {
+            "method": "POST",
+            "path": "/",
+            "handler": "import-content.create",
+            "config": {
+                "policies": []
+            }
+        },
+        {
+            "method": "POST",
+            "path": "/:importId/undo",
+            "handler": "import-content.undo",
+            "config": {
+                "policies": []
+            }
+        },
+        {
+            "method": "GET",
+            "path": "/import-config",
+            "handler": "import-config.find",
+            "config": {
+              "policies": []
+            }
+          },
+          {
+            "method": "GET",
+            "path": "/import-config/:importId",
+            "handler": "import-config.findOne",
+            "config": {
+              "policies": []
+            }
+          },
+          {
+            "method": "GET",
+            "path": "/import-config/count",
+            "handler": "import-config.count",
+            "config": {
+              "policies": []
+            }
+          },
+          {
+            "method": "PUT",
+            "path": "/import-config/:importId",
+            "handler": "import-config.update",
+            "config": {
+              "policies": []
+            }
+          },
+          {
+            "method": "DELETE",
+            "path": "/import-config/:importId",
+            "handler": "import-config.delete",
+            "config": {
+              "policies": []
+            }
+          },
+          {
+            "method": "GET",
+            "path": "/imported-item",
+            "handler": "imported-item.find",
+            "config": {
+              "policies": []
+            }
+          },
+          {
+            "method": "GET",
+            "path": "/imported-item/:importId",
+            "handler": "imported-item.findOne",
+            "config": {
+              "policies": []
+            }
+          },
+          {
+            "method": "GET",
+            "path": "/imported-item/count",
+            "handler": "imported-item.count",
+            "config": {
+              "policies": []
+            }
+          },
+          {
+            "method": "PUT",
+            "path": "/imported-item/:importId",
+            "handler": "imported-item.update",
+            "config": {
+              "policies": []
+            }
+          },
+          {
+            "method": "DELETE",
+            "path": "/imported-item/:importId",
+            "handler": "imported-item.delete",
+            "config": {
+              "policies": []
+            }
+          }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_input_inputs",
+  "info": {
+    "name": "Input",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "Label": {
+      "type": "string"
+    },
+    "Placeholder": {
+      "type": "string"
+    },
+    "Button": {
+      "type": "component",
+      "repeatable": true,
+      "component": "input.button",
+      "max": 2
+    }
+  }
+}

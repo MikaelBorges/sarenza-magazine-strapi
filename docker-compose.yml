@@ -19,30 +19,20 @@ services:
       - strapi
   strapi:
     container_name: strapi
-    image: sarenza/strapi:1.0.0
-    stdin_open: true # docker run -i
-    tty: true # docker run -t
+    image: sarenza/strapi:3.1.6
+    stdin_open: true
+    tty: true 
+    restart: unless-stopped
     build:
       context: ./strapi
       dockerfile: Dockerfile.strapi
-      args:
-        buildno: 1
     depends_on:
       - "strapidb"
     environment:
       - DATABASE_HOST=strapidb
-      - NODE_ENV=development
+      - NODE_ENV=production
     ports:
       - 3337:1337
-    networks:
-      - strapi
-
-  adminer:
-    container_name: adminer
-    image: adminer
-    restart: always
-    ports:
-      - 8080:8080
     networks:
       - strapi
   pgadmin:
@@ -51,7 +41,6 @@ services:
     environment:
       - PGADMIN_DEFAULT_EMAIL=ylorho@sarenza.com
       - PGADMIN_DEFAULT_PASSWORD=azertyuiop
-      # - PGADMIN_ENABLE_TLS=false
     ports:
       - 8081:57598
       - 70:80
@@ -61,5 +50,7 @@ services:
 networks:
   strapi:
 volumes:
+    # Must be created out of this docker-compose context 
+    #   -> docker volume create --name strapidb -d local
     strapidb:
       external: true
