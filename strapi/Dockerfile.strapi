@@ -1,9 +1,10 @@
-ARG NODE_VERSION=10
-ARG STRAPI_VERSION=3.1.6
+ARG NODE_VERSION=12
+ARG STRAPI_VERSION=3.2.1
 
 FROM node:${NODE_VERSION}
 
 EXPOSE 1337
+EXPOSE 8000
 
 RUN mkdir /srv/app && chown 1000:1000 -R /srv/app
 
@@ -12,22 +13,22 @@ WORKDIR /srv/app
 ENV NODE_ENV production
 ENV DATABASE_CLIENT postgres
 ENV DATABASE_NAME strapi
-ENV DATABASE_HOST 10.149.13.34
+ENV DATABASE_HOST strapidb
 ENV DATABASE_PORT 5432
 ENV DATABASE_USERNAME strapi
 ENV DATABASE_PASSWORD strapi 
 ENV DATABASE_SSL false
 ENV DOCKER true
 
-RUN yarn global add strapi@${strapi_version} && yarn install
-
-WORKDIR /srv/app 
-# RUN strapi install graphql && strapi install documentation
 COPY ./Strapi .
-RUN cd /srv/app/plugins/import-content && yarn install
-RUN strapi build
+
+RUN chmod +x ./init.sh && ./init.sh && yarn install
+
+WORKDIR /srv/app
+
+RUN yarn global add strapi@${strapi_version} && strapi build
 
 COPY ./entrypoint.sh /usr/local/bin/
 
 ENTRYPOINT ["entrypoint.sh"]
-CMD ["strapi", "start"]
+CMD ["yarn", "develop"]

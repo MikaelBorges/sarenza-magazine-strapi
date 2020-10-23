@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "This is the description of the plugin.",
   "strapi": {
-    "name": "Content Importer",
+    "name": "import-content",
     "icon": "download",
     "description": "Description of import-content plugin."
   },

@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   strapidb:
-    image: sarenza/strapidb:1.0.0
+    image: srzlab.azurecr.io/strapidb:1.0.0
     container_name: strapidb
     restart: always
     build:
@@ -14,14 +14,14 @@ services:
     ports:
       - 5432:5432
     volumes:
-        - strapidb:/var/lib/postgresql/data
+      - strapidb:/var/lib/postgresql/data
     networks:
       - strapi
   strapi:
     container_name: strapi
-    image: sarenza/strapi:3.1.6
+    image: srzlab.azurecr.io/strapi:1.0.0
     stdin_open: true
-    tty: true 
+    tty: true
     restart: unless-stopped
     build:
       context: ./strapi
@@ -30,9 +30,43 @@ services:
       - "strapidb"
     environment:
       - DATABASE_HOST=strapidb
-      - NODE_ENV=production
+      - NODE_ENV=development
+    volumes:
+      - c:/volume/strapi/uploads:/srv/app/public/uploads
     ports:
-      - 3337:1337
+      - 3337:9337
+    networks:
+      - strapi
+  magazine:
+    container_name: sarenzamag
+    image: srzlab.azurecr.io/magazine:1.0.0
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
+    environment:
+      - STRAPI_SERVICE_URL=strapi
+      - STRAPI_SERVICE_PORT=3337
+    build:
+      context: ../Sarenza.DigitalExperience.Magazine2
+      dockerfile: Dockerfile
+    volumes:
+        - c:/volume/next:/srv/app/.next/static
+    depends_on:
+      - "strapi"
+    ports:
+      - 80:3000
+      - 443:5000
+    networks:
+      - strapi
+  api:
+    container_name: strapibackendapi
+    image: srzlab.azurecr.io/strapi-backend-api:1.0.0
+    restart: unless-stopped
+    build:
+      context: ./api
+      dockerfile: Dockerfile.backendapi
+    ports:
+      - 8080:3000
     networks:
       - strapi
   pgadmin:
@@ -43,14 +77,14 @@ services:
       - PGADMIN_DEFAULT_PASSWORD=azertyuiop
     ports:
       - 8081:57598
-      - 70:80
-      - 433:443
+      - 81:80
+      - 444:443
     networks:
       - strapi
 networks:
   strapi:
 volumes:
-    # Must be created out of this docker-compose context 
-    #   -> docker volume create --name strapidb -d local
-    strapidb:
-      external: true
+  # Must be created out of this docker-compose context
+  #   -> docker volume create --name strapidb -d local
+  strapidb:
+    external: true

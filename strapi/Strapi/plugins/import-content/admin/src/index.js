@@ -4,11 +4,14 @@ import App from './containers/App';
 import Initializer from './containers/Initializer';
 import lifecycles from './lifecycles';
 import trads from './translations';
+import Settings from './containers/Settings';
 
 export default strapi => {
   const pluginDescription = pluginPkg.strapi.description || pluginPkg.description;
   const icon = pluginPkg.strapi.icon;
   const name = pluginPkg.strapi.name;
+
+  
 
   const plugin = {
     blockerComponent: null,
@@ -38,14 +41,14 @@ export default strapi => {
           name,
           permissions: [
             // Uncomment to set the permissions of the plugin here
-            // {
-            //   action: '', // the action name should be plugins::plugin-name.actionType
-            //   subject: null,
-            // },
+            {
+              action: `plugins::${name}.read`, // the action name should be plugins::plugin-name.actionType
+              subject: null,
+            },
           ],
         },
       ],
-    },
+    }
   };
 
   return strapi.registerPlugin(plugin);
