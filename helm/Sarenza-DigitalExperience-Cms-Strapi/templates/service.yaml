@@ -4,6 +4,8 @@ metadata:
   name: {{ include "sarenza-digitalexperience-cms-strapi.fullname" . }}
   labels:
 {{ include "sarenza-digitalexperience-cms-strapi.labels" . | indent 4 }}
+  annotations:
+    cloud.google.com/load-balancer-type: Internal
 spec:
   type: {{ .Values.service.type }}
   ports:

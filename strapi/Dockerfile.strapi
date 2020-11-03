@@ -1,5 +1,5 @@
-ARG NODE_VERSION=12
-ARG STRAPI_VERSION=3.2.1
+ARG NODE_VERSION=12.19.0-alpine3.12
+ARG STRAPI_VERSION=3.2.5
 
 FROM node:${NODE_VERSION}
 
@@ -31,4 +31,5 @@ RUN yarn global add strapi@${strapi_version} && strapi build
 COPY ./entrypoint.sh /usr/local/bin/
 
 ENTRYPOINT ["entrypoint.sh"]
-CMD ["yarn", "develop"]
+
+CMD ["yarn", "start"]

@@ -1,61 +1,19 @@
 version: "3.8"
 services:
-  strapidb:
-    image: srzlab.azurecr.io/strapidb:1.0.0
-    container_name: strapidb
-    restart: always
-    build:
-      context: ./database
-      dockerfile: Dockerfile.postgresql
-      args:
-        buildno: 1
-    environment:
-      - POSTGRES_PASSWORD=azertyuiop
-    ports:
-      - 5432:5432
-    volumes:
-      - strapidb:/var/lib/postgresql/data
-    networks:
-      - strapi
   strapi:
     container_name: strapi
-    image: srzlab.azurecr.io/strapi:1.0.0
+    image: srzlab.azurecr.io/strapi:1.0.1
     stdin_open: true
     tty: true
     restart: unless-stopped
     build:
       context: ./strapi
       dockerfile: Dockerfile.strapi
-    depends_on:
-      - "strapidb"
     environment:
-      - DATABASE_HOST=strapidb
+      - DATABASE_HOST=strapi.dev.sarenza.corp
       - NODE_ENV=development
-    volumes:
-      - c:/volume/strapi/uploads:/srv/app/public/uploads
     ports:
-      - 3337:9337
-    networks:
-      - strapi
-  magazine:
-    container_name: sarenzamag
-    image: srzlab.azurecr.io/magazine:1.0.0
-    stdin_open: true
-    tty: true
-    restart: unless-stopped
-    environment:
-      - STRAPI_SERVICE_URL=strapi
-      - STRAPI_SERVICE_PORT=3337
-    build:
-      context: ../Sarenza.DigitalExperience.Magazine2
-      dockerfile: Dockerfile
-    volumes:
-        - c:/volume/next:/srv/app/.next/static
-    depends_on:
-      - "strapi"
-    ports:
-      - 80:3000
-      - 443:5000
+      - 1337:9337
     networks:
       - strapi
   api:
@@ -69,22 +27,5 @@ services:
       - 8080:3000
     networks:
       - strapi
-  pgadmin:
-    container_name: pgadmin
-    image: dpage/pgadmin4
-    environment:
-      - PGADMIN_DEFAULT_EMAIL=ylorho@sarenza.com
-      - PGADMIN_DEFAULT_PASSWORD=azertyuiop
-    ports:
-      - 8081:57598
-      - 81:80
-      - 444:443
-    networks:
-      - strapi
 networks:
   strapi:
-volumes:
-  # Must be created out of this docker-compose context
-  #   -> docker volume create --name strapidb -d local
-  strapidb:
-    external: true
