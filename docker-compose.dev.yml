@@ -1,0 +1,38 @@
+version: "3.8"
+services:
+  strapidb:
+    image: sarenza/strapidb:1.0.0
+    container_name: strapidb
+    restart: always
+    build:
+      context: ./database
+      dockerfile: Dockerfile.postgresql
+      args:
+        buildno: 1
+    environment:
+      - POSTGRES_PASSWORD=azertyuiop
+    ports:
+      - 5433:5432
+    volumes:
+        - strapidb:/var/lib/postgresql/data
+    networks:
+      - strapi
+  pgadmin:
+    container_name: pgadmin
+    image: dpage/pgadmin4
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=ylorho@sarenza.com
+      - PGADMIN_DEFAULT_PASSWORD=azertyuiop
+    ports:
+      - 8081:57598
+      - 70:80
+      - 433:443
+    networks:
+      - strapi
+networks:
+  strapi:
+volumes:
+    # Must be created out of this docker-compose context 
+    #   -> docker volume create --name strapidb -d local
+    strapidb:
+      external: true
