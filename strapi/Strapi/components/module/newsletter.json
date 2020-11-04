@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_module_newsletters",
+  "info": {
+    "name": "Newsletter",
+    "icon": "mail-bulk"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "SubTitle": {
+      "type": "string"
+    },
+    "Text": {
+      "type": "string"
+    },
+    "Input": {
+      "type": "component",
+      "repeatable": false,
+      "component": "input.input"
+    },
+    "Terms": {
+      "type": "richtext"
+    }
+  }
+}

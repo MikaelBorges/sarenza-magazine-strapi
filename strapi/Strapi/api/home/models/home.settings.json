@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "name": "home",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "shortDescription": {
+      "type": "string"
+    },
+    "marquee": {
+      "model": "marquee"
+    },
+    "marqueeTop": {
+      "model": "marquee"
+    },
+    "displayTop": {
+      "model": "display-component"
+    },
+    "displayBottom": {
+      "model": "display-component"
+    },
+    "ArticleUne": {
+      "model": "article"
+    }
+  }
+}

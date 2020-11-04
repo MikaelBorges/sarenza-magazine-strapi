@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "home_components",
+  "info": {
+    "name": "displayComponent"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Display": {
+      "type": "component",
+      "repeatable": false,
+      "component": "module.display"
+    }
+  }
+}
