@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_social_media_socialmedia_parents",
+  "info": {
+    "name": "socialmediaParent",
+    "icon": "air-freshener"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "SocialMediaItem": {
+      "type": "component",
+      "repeatable": true,
+      "component": "socialmedia.social-media-item"
+    }
+  }
+}

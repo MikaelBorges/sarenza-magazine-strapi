@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_module_partners",
+  "info": {
+    "name": "Partners",
+    "icon": "parachute-box"
+  },
+  "options": {},
+  "attributes": {
+    "Partner": {
+      "type": "component",
+      "repeatable": true,
+      "component": "input.button"
+    }
+  }
+}

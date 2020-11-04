@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "footers",
+  "info": {
+    "name": "Footer"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Reassurance": {
+      "type": "component",
+      "repeatable": true,
+      "component": "module.reassurance"
+    },
+    "Newsletter": {
+      "type": "component",
+      "repeatable": false,
+      "component": "module.newsletter"
+    },
+    "NeedHelp": {
+      "type": "component",
+      "repeatable": false,
+      "component": "module.help"
+    },
+    "VariousText": {
+      "type": "component",
+      "repeatable": false,
+      "component": "module.various-text"
+    },
+    "Reviews": {
+      "type": "component",
+      "repeatable": false,
+      "component": "module.reviews"
+    },
+    "BlockLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "module.block-links"
+    },
+    "SocialMedia": {
+      "type": "component",
+      "repeatable": false,
+      "component": "socialmedia.socialmedia-parent"
+    },
+    "PartnerIcon": {
+      "type": "component",
+      "repeatable": true,
+      "component": "module.partner-icon"
+    },
+    "FooterLink": {
+      "type": "component",
+      "repeatable": true,
+      "component": "module.footer-links"
+    },
+    "CountrySelector": {
+      "type": "component",
+      "repeatable": true,
+      "component": "footer.country-selector"
+    }
+  }
+}

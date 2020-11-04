@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_module_histoires",
+  "info": {
+    "name": "Histoire",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}
