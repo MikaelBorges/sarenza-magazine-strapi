@@ -148,3 +148,19 @@ $ helm init --client-only
 ```sh
 $ kubectl config current-context
 ```
+
+
+## Install solution
+
+```sh
+$ yarn global add strapi
+$ yarn -cwd strapi/Strapi
+$ cd strapi/Strapi/plugins/import-content
+$ yarn
+$ cd ../../../..
+$ cd strapi/Strapi/plugins/import-component
+$ yarn
+$ cd ../..
+$ yarn -cwd strapi/Strapi build
+$ cd ../..
+```
