@@ -525,6 +525,46 @@
           "header": {
             "type": "string"
           },
+          "menu_items": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "category": {
+                  "type": "string"
+                },
+                "links": {
+                  "type": "component"
+                },
+                "menu": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "Url": {
+            "type": "string"
+          },
+          "order": {
+            "type": "integer"
+          },
+          "colorText": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -534,6 +574,21 @@
       "NewMenu": {
         "properties": {
           "header": {
+            "type": "string"
+          },
+          "menu_items": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "Url": {
+            "type": "string"
+          },
+          "order": {
+            "type": "integer"
+          },
+          "colorText": {
             "type": "string"
           },
           "published_at": {
