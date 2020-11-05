@@ -21,6 +21,8 @@ docker-compose push
 
 ### Variables d'environnement
 
+helm upgrade --recreate-pods -i strapi-dev ./helm/sarenza-digitalexperience-cms-strapi --tiller-namespace digitalexperience-dev-tiller --namespace digitalexperience-dev
+
 #### dev
 ---
 | clé              | value                           |
@@ -47,6 +49,8 @@ docker-compose push
 | credentials      | `srz-gke-prd-36d82766`          |
 | strapi admin url | http://strapi.prd.sarenza.corp/ |
 ---
+
+gcloud container clusters get-credentials srz-gke-prd-36d82766 --zone europe-west1-b --project srz-prj-ec4f7b6b
 
 ## Modifications de conf
 

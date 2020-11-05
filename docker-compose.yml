@@ -2,7 +2,7 @@ version: "3.8"
 services:
   strapi:
     container_name: strapi
-    image: srzlab.azurecr.io/strapi:1.0.1
+    image: srzlab.azurecr.io/strapi:1.0.0
     stdin_open: true
     tty: true
     restart: unless-stopped
@@ -10,22 +10,23 @@ services:
       context: ./strapi
       dockerfile: Dockerfile.strapi
     environment:
-      - DATABASE_HOST=strapi.dev.sarenza.corp
+      - DATABASE_HOST=yolo03.sarenza.archi
       - NODE_ENV=development
+      - DATABASE_PORT=5433
     ports:
-      - 1337:9337
+      - 3337:9337
     networks:
-      - strapi
-  api:
-    container_name: strapibackendapi
-    image: srzlab.azurecr.io/strapi-backend-api:1.0.0
-    restart: unless-stopped
-    build:
-      context: ./api
-      dockerfile: Dockerfile.backendapi
-    ports:
-      - 8080:3000
-    networks:
-      - strapi
+      - strapi1
+  # api:
+  #   container_name: strapibackendapi
+  #   image: srzlab.azurecr.io/strapi-backend-api:1.0.0
+  #   restart: unless-stopped
+  #   build:
+  #     context: ./api
+  #     dockerfile: Dockerfile.backendapi
+  #   ports:
+  #     - 8080:3000
+  #   networks:
+  #     - strapi1
 networks:
-  strapi:
+  strapi1:
