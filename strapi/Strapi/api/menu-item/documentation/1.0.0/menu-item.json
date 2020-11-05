@@ -569,6 +569,21 @@
               "header": {
                 "type": "string"
               },
+              "menu_items": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "Url": {
+                "type": "string"
+              },
+              "order": {
+                "type": "integer"
+              },
+              "colorText": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
