@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_module_slider_articles",
+  "info": {
+    "name": "sliderArticle",
+    "icon": "arrows-alt-h"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "input.button"
+    },
+    "vignette": {
+      "type": "component",
+      "repeatable": true,
+      "component": "module.vignette"
+    }
+  }
+}

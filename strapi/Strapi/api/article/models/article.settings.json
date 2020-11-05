@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Edito",
+  "info": {
+    "name": "article",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "url": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "author": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    },
+    "ImageArticleMobile": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "module": {
+      "type": "dynamiczone",
+      "components": [
+        "media.image",
+        "module.slider-article",
+        "module.paragraphe",
+        "module.duo"
+      ]
+    },
+    "rubriques": {
+      "collection": "rubrique",
+      "via": "articles",
+      "dominant": true
+    },
+    "tags": {
+      "collection": "tag",
+      "via": "articles",
+      "dominant": true
+    }
+  }
+}

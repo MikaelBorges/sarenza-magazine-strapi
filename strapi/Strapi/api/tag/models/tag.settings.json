@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Metadatas",
+  "info": {
+    "name": "tag"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "articles": {
+      "via": "tags",
+      "collection": "article"
+    }
+  }
+}

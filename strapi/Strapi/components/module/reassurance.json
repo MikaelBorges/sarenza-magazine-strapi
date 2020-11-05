@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_module_reassurances",
+  "info": {
+    "name": "Reassurance",
+    "icon": "chart-area"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "Icon": {
+      "type": "enumeration",
+      "enum": [
+        "delivery24",
+        "return100",
+        "customer",
+        "payment"
+      ]
+    }
+  }
+}

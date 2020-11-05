@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rubriques",
+  "info": {
+    "name": "Rubrique",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "rubrique": {
+      "type": "string"
+    },
+    "url": {
+      "type": "uid",
+      "targetField": "rubrique"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "articles": {
+      "via": "rubriques",
+      "collection": "article"
+    },
+    "marquee_top": {
+      "model": "marquee"
+    },
+    "marquee_bottom": {
+      "model": "marquee"
+    },
+    "display_top": {
+      "model": "display-component"
+    },
+    "display_bottom": {
+      "model": "display-component"
+    }
+  }
+}
