@@ -12,29 +12,29 @@ services:
     environment:
       - POSTGRES_PASSWORD=azertyuiop
     ports:
-      - 5433:5432
+      - 5432:5432
     volumes:
         - strapidb:/var/lib/postgresql/data
     networks:
       - strapi
-  strapi:
-    container_name: strapi
-    image: srzlab.azurecr.io/strapi:1.0.0
-    stdin_open: true
-    tty: true
-    restart: unless-stopped
-    depends_on: 
-      - strapidb
-    build:
-      context: ./strapi
-      dockerfile: Dockerfile.strapi
-    environment:
-      - DATABASE_HOST=strapidb
-      - NODE_ENV=development
-    ports:
-      - 2337:9337
-    networks:
-      - strapi
+  # strapi:
+  #   container_name: strapi
+  #   image: srzlab.azurecr.io/strapi:1.0.0
+  #   stdin_open: true
+  #   tty: true
+  #   restart: unless-stopped
+  #   depends_on: 
+  #     - strapidb
+  #   build:
+  #     context: ./strapi
+  #     dockerfile: Dockerfile.strapi
+  #   environment:
+  #     - DATABASE_HOST=strapidb
+  #     - NODE_ENV=development
+  #   ports:
+  #     - 2337:9337
+  #   networks:
+  #     - strapi
   pgadmin:
     container_name: pgadmin
     image: dpage/pgadmin4
