@@ -2,13 +2,14 @@
   "collectionName": "components_media_videos",
   "info": {
     "name": "Video",
-    "icon": "video"
+    "icon": "video",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "image": {
       "type": "component",
-      "repeatable": true,
+      "repeatable": false,
       "component": "media.image"
     },
     "iframe_url": {

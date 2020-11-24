@@ -36,7 +36,8 @@
         "media.image",
         "module.slider-article",
         "module.paragraphe",
-        "module.duo"
+        "module.duo",
+        "media.video"
       ]
     },
     "rubriques": {

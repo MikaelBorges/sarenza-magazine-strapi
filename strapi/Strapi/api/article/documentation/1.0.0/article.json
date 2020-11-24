@@ -552,7 +552,8 @@
                         "media.image",
                         "module.slider-article",
                         "module.paragraphe",
-                        "module.duo"
+                        "module.duo",
+                        "media.video"
                       ]
                     },
                     "id": {
@@ -581,7 +582,8 @@
                         "media.image",
                         "module.slider-article",
                         "module.paragraphe",
-                        "module.duo"
+                        "module.duo",
+                        "media.video"
                       ]
                     },
                     "id": {
@@ -655,7 +657,8 @@
                         "media.image",
                         "module.slider-article",
                         "module.paragraphe",
-                        "module.duo"
+                        "module.duo",
+                        "media.video"
                       ]
                     },
                     "id": {
@@ -686,7 +689,8 @@
                         "media.image",
                         "module.slider-article",
                         "module.paragraphe",
-                        "module.duo"
+                        "module.duo",
+                        "media.video"
                       ]
                     },
                     "id": {
@@ -735,6 +739,50 @@
                           "type": "string"
                         }
                       }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "media.image",
+                        "module.slider-article",
+                        "module.paragraphe",
+                        "module.duo",
+                        "media.video"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "image": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "url"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "alt": {
+                          "type": "string"
+                        },
+                        "url_mobile": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "iframe_url": {
+                      "type": "string"
                     }
                   },
                   "required": [
@@ -865,7 +913,8 @@
                         "media.image",
                         "module.slider-article",
                         "module.paragraphe",
-                        "module.duo"
+                        "module.duo",
+                        "media.video"
                       ]
                     },
                     "id": {
@@ -894,7 +943,8 @@
                         "media.image",
                         "module.slider-article",
                         "module.paragraphe",
-                        "module.duo"
+                        "module.duo",
+                        "media.video"
                       ]
                     },
                     "id": {
@@ -968,7 +1018,8 @@
                         "media.image",
                         "module.slider-article",
                         "module.paragraphe",
-                        "module.duo"
+                        "module.duo",
+                        "media.video"
                       ]
                     },
                     "id": {
@@ -999,7 +1050,8 @@
                         "media.image",
                         "module.slider-article",
                         "module.paragraphe",
-                        "module.duo"
+                        "module.duo",
+                        "media.video"
                       ]
                     },
                     "id": {
@@ -1048,6 +1100,50 @@
                           "type": "string"
                         }
                       }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "media.image",
+                        "module.slider-article",
+                        "module.paragraphe",
+                        "module.duo",
+                        "media.video"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "image": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "url"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "alt": {
+                          "type": "string"
+                        },
+                        "url_mobile": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "iframe_url": {
+                      "type": "string"
                     }
                   },
                   "required": [
