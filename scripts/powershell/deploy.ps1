@@ -1,7 +1,7 @@
-# docker-compose build --force-rm --no-cache
+docker-compose build --force-rm --no-cache
 
-# az acr login -n srzlab
-# docker-compose push
+az acr login -n srzlab
+docker-compose push
 
 # gcloud container clusters get-credentials srz-gke-prd-36d82766 --zone europe-west1-b --project srz-prj-ec4f7b6b
 # helm upgrade --recreate-pods -i strapi ./helm/sarenza-digitalexperience-cms-strapi --tiller-namespace digitalexperience-tiller --namespace digitalexperience
