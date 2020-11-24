@@ -524,12 +524,18 @@
           },
           "Gender": {
             "type": "string"
+          },
+          "url": {
+            "type": "string"
           }
         }
       },
       "NewGender": {
         "properties": {
           "Gender": {
+            "type": "string"
+          },
+          "url": {
             "type": "string"
           },
           "created_by": {

@@ -2,14 +2,19 @@
   "kind": "collectionType",
   "collectionName": "genders",
   "info": {
-    "name": "Gender"
+    "name": "Gender",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
     "Gender": {
+      "type": "string"
+    },
+    "url": {
       "type": "string"
     }
   }
