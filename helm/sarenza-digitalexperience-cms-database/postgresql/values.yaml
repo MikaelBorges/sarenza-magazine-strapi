@@ -427,7 +427,16 @@ master:
   ## ref: https://kubernetes.io/docs/concepts/configuration/pod-priority-preemption
   ##
   nodeSelector: {}
-  affinity: {}
+  affinity:
+  nodeAffinity:
+    preferredDuringSchedulingIgnoredDuringExecution:
+      - weight: 1
+        preference:
+          matchExpressions:
+          - key: sarenza.com/lifecycle
+            operator: In
+            values:
+            - persistent
   tolerations: []
   labels: {}
   annotations: {}
