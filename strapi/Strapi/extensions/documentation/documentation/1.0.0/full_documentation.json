@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "11/20/2020 10:29:16 AM"
+    "x-generation-date": "11/24/2020 11:23:31 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -7116,7 +7116,8 @@
                         "media.image",
                         "module.slider-article",
                         "module.paragraphe",
-                        "module.duo"
+                        "module.duo",
+                        "media.video"
                       ]
                     },
                     "id": {
@@ -7145,7 +7146,8 @@
                         "media.image",
                         "module.slider-article",
                         "module.paragraphe",
-                        "module.duo"
+                        "module.duo",
+                        "media.video"
                       ]
                     },
                     "id": {
@@ -7219,7 +7221,8 @@
                         "media.image",
                         "module.slider-article",
                         "module.paragraphe",
-                        "module.duo"
+                        "module.duo",
+                        "media.video"
                       ]
                     },
                     "id": {
@@ -7250,7 +7253,8 @@
                         "media.image",
                         "module.slider-article",
                         "module.paragraphe",
-                        "module.duo"
+                        "module.duo",
+                        "media.video"
                       ]
                     },
                     "id": {
@@ -7299,6 +7303,50 @@
                           "type": "string"
                         }
                       }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "media.image",
+                        "module.slider-article",
+                        "module.paragraphe",
+                        "module.duo",
+                        "media.video"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "image": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "url"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "alt": {
+                          "type": "string"
+                        },
+                        "url_mobile": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "iframe_url": {
+                      "type": "string"
                     }
                   },
                   "required": [
@@ -7429,7 +7477,8 @@
                         "media.image",
                         "module.slider-article",
                         "module.paragraphe",
-                        "module.duo"
+                        "module.duo",
+                        "media.video"
                       ]
                     },
                     "id": {
@@ -7458,7 +7507,8 @@
                         "media.image",
                         "module.slider-article",
                         "module.paragraphe",
-                        "module.duo"
+                        "module.duo",
+                        "media.video"
                       ]
                     },
                     "id": {
@@ -7532,7 +7582,8 @@
                         "media.image",
                         "module.slider-article",
                         "module.paragraphe",
-                        "module.duo"
+                        "module.duo",
+                        "media.video"
                       ]
                     },
                     "id": {
@@ -7563,7 +7614,8 @@
                         "media.image",
                         "module.slider-article",
                         "module.paragraphe",
-                        "module.duo"
+                        "module.duo",
+                        "media.video"
                       ]
                     },
                     "id": {
@@ -7612,6 +7664,50 @@
                           "type": "string"
                         }
                       }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "media.image",
+                        "module.slider-article",
+                        "module.paragraphe",
+                        "module.duo",
+                        "media.video"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "image": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "url"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "alt": {
+                          "type": "string"
+                        },
+                        "url_mobile": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "iframe_url": {
+                      "type": "string"
                     }
                   },
                   "required": [
@@ -8555,12 +8651,18 @@
           },
           "Gender": {
             "type": "string"
+          },
+          "url": {
+            "type": "string"
           }
         }
       },
       "NewGender": {
         "properties": {
           "Gender": {
+            "type": "string"
+          },
+          "url": {
             "type": "string"
           },
           "created_by": {
