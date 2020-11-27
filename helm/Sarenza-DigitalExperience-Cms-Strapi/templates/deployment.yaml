@@ -26,7 +26,7 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           env:
             - name: DATABASE_HOST
-              value: strapi-db-postgresql
+              value: strapi-db-dev-postgresql
             - name: NODE_ENV
               value: production
           ports:
