@@ -143,7 +143,7 @@ postgresqlUsername: postgres
 ## PostgreSQL password
 ## ref: https://github.com/bitnami/bitnami-docker-postgresql/blob/master/README.md#setting-the-root-password-on-first-run
 ##
-# postgresqlPassword:
+# postgresqlPassword: 5Cvlh89cpn
 
 ## PostgreSQL password using existing secret
 ## existingSecret: secret
@@ -392,7 +392,7 @@ persistence:
   ## If defined, PVC must be created manually before volume will be bound
   ## The value is evaluated as a template, so, for example, the name can depend on .Release or .Chart
   ##
-  # existingClaim:
+  # existingClaim: data-strapi-db-dev-postgresql-0
 
   ## The path the volume will be mounted at, useful when using different
   ## PostgreSQL images.
