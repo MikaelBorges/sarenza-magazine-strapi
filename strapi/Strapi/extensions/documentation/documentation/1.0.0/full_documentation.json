@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "11/24/2020 11:23:31 AM"
+    "x-generation-date": "12/14/2020 6:58:50 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -7117,7 +7117,8 @@
                         "module.slider-article",
                         "module.paragraphe",
                         "module.duo",
-                        "media.video"
+                        "media.video",
+                        "edito.edito-court"
                       ]
                     },
                     "id": {
@@ -7147,7 +7148,8 @@
                         "module.slider-article",
                         "module.paragraphe",
                         "module.duo",
-                        "media.video"
+                        "media.video",
+                        "edito.edito-court"
                       ]
                     },
                     "id": {
@@ -7222,7 +7224,8 @@
                         "module.slider-article",
                         "module.paragraphe",
                         "module.duo",
-                        "media.video"
+                        "media.video",
+                        "edito.edito-court"
                       ]
                     },
                     "id": {
@@ -7254,7 +7257,8 @@
                         "module.slider-article",
                         "module.paragraphe",
                         "module.duo",
-                        "media.video"
+                        "media.video",
+                        "edito.edito-court"
                       ]
                     },
                     "id": {
@@ -7318,7 +7322,8 @@
                         "module.slider-article",
                         "module.paragraphe",
                         "module.duo",
-                        "media.video"
+                        "media.video",
+                        "edito.edito-court"
                       ]
                     },
                     "id": {
@@ -7347,6 +7352,85 @@
                     },
                     "iframe_url": {
                       "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "media.image",
+                        "module.slider-article",
+                        "module.paragraphe",
+                        "module.duo",
+                        "media.video",
+                        "edito.edito-court"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Button": {
+                      "type": "object",
+                      "required": [
+                        "id"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "label": {
+                          "type": "string"
+                        },
+                        "link": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "Image": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "url"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "alt": {
+                          "type": "string"
+                        },
+                        "url_mobile": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "BlockText": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "Title": {
+                            "type": "string"
+                          },
+                          "Text": {
+                            "type": "string"
+                          }
+                        }
+                      }
                     }
                   },
                   "required": [
@@ -7478,7 +7562,8 @@
                         "module.slider-article",
                         "module.paragraphe",
                         "module.duo",
-                        "media.video"
+                        "media.video",
+                        "edito.edito-court"
                       ]
                     },
                     "id": {
@@ -7508,7 +7593,8 @@
                         "module.slider-article",
                         "module.paragraphe",
                         "module.duo",
-                        "media.video"
+                        "media.video",
+                        "edito.edito-court"
                       ]
                     },
                     "id": {
@@ -7583,7 +7669,8 @@
                         "module.slider-article",
                         "module.paragraphe",
                         "module.duo",
-                        "media.video"
+                        "media.video",
+                        "edito.edito-court"
                       ]
                     },
                     "id": {
@@ -7615,7 +7702,8 @@
                         "module.slider-article",
                         "module.paragraphe",
                         "module.duo",
-                        "media.video"
+                        "media.video",
+                        "edito.edito-court"
                       ]
                     },
                     "id": {
@@ -7679,7 +7767,8 @@
                         "module.slider-article",
                         "module.paragraphe",
                         "module.duo",
-                        "media.video"
+                        "media.video",
+                        "edito.edito-court"
                       ]
                     },
                     "id": {
@@ -7708,6 +7797,85 @@
                     },
                     "iframe_url": {
                       "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "media.image",
+                        "module.slider-article",
+                        "module.paragraphe",
+                        "module.duo",
+                        "media.video",
+                        "edito.edito-court"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Button": {
+                      "type": "object",
+                      "required": [
+                        "id"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "label": {
+                          "type": "string"
+                        },
+                        "link": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "Image": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "url"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "alt": {
+                          "type": "string"
+                        },
+                        "url_mobile": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "BlockText": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "Title": {
+                            "type": "string"
+                          },
+                          "Text": {
+                            "type": "string"
+                          }
+                        }
+                      }
                     }
                   },
                   "required": [
