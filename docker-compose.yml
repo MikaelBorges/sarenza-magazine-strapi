@@ -2,7 +2,7 @@ version: "3.8"
 services:
   strapi:
     container_name: strapi
-    image: srzlab.azurecr.io/strapi:1.2.0
+    image: srzlab.azurecr.io/strapi:1.3.0-unstable-1
     stdin_open: true
     tty: true
     restart: unless-stopped
