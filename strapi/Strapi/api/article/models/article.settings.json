@@ -38,7 +38,8 @@
         "module.paragraphe",
         "module.duo",
         "media.video",
-        "edito.edito-court"
+        "edito.edito-court",
+        "module.ligne-produit"
       ]
     },
     "rubriques": {

@@ -554,7 +554,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "edito.edito-court",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -585,7 +586,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "edito.edito-court",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -661,7 +663,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "edito.edito-court",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -694,7 +697,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "edito.edito-court",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -759,7 +763,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "edito.edito-court",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -804,7 +809,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "edito.edito-court",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -867,6 +873,55 @@
                           }
                         }
                       }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "media.image",
+                        "module.slider-article",
+                        "module.paragraphe",
+                        "module.duo",
+                        "media.video",
+                        "edito.edito-court",
+                        "module.ligne-produit"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "ProductCard": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "url_image": {
+                            "type": "string"
+                          },
+                          "pcid": {
+                            "type": "integer"
+                          },
+                          "url_cta": {
+                            "type": "string"
+                          },
+                          "url_text": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "maxItems": 12
                     }
                   },
                   "required": [
@@ -999,7 +1054,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "edito.edito-court",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -1030,7 +1086,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "edito.edito-court",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -1106,7 +1163,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "edito.edito-court",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -1139,7 +1197,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "edito.edito-court",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -1204,7 +1263,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "edito.edito-court",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -1249,7 +1309,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "edito.edito-court",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -1312,6 +1373,55 @@
                           }
                         }
                       }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "media.image",
+                        "module.slider-article",
+                        "module.paragraphe",
+                        "module.duo",
+                        "media.video",
+                        "edito.edito-court",
+                        "module.ligne-produit"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "ProductCard": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "url_image": {
+                            "type": "string"
+                          },
+                          "pcid": {
+                            "type": "integer"
+                          },
+                          "url_cta": {
+                            "type": "string"
+                          },
+                          "url_text": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "maxItems": 12
                     }
                   },
                   "required": [

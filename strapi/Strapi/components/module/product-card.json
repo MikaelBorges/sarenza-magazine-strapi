@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_module_product_cards",
+  "info": {
+    "name": "ProductCard",
+    "icon": "backward"
+  },
+  "options": {},
+  "attributes": {
+    "url_image": {
+      "type": "string"
+    },
+    "pcid": {
+      "type": "integer"
+    },
+    "url_cta": {
+      "type": "string"
+    },
+    "url_text": {
+      "type": "string"
+    }
+  }
+}
