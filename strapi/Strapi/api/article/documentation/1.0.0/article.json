@@ -959,6 +959,24 @@
               }
             }
           },
+          "metaSeo": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string",
+                "maxLength": 170
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -1331,6 +1349,24 @@
             "type": "array",
             "items": {
               "type": "string"
+            }
+          },
+          "metaSeo": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string",
+                "maxLength": 170
+              }
             }
           },
           "published_at": {

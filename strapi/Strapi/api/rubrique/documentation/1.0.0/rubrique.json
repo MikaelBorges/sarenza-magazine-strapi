@@ -574,6 +574,9 @@
                     "type": "string"
                   }
                 },
+                "metaSeo": {
+                  "type": "component"
+                },
                 "published_at": {
                   "type": "string"
                 },

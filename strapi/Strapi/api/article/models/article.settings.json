@@ -50,6 +50,11 @@
       "collection": "tag",
       "via": "articles",
       "dominant": true
+    },
+    "metaSeo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo"
     }
   }
 }
