@@ -17,10 +17,11 @@
       "repeatable": false,
       "component": "media.image"
     },
-    "BlockText": {
-      "type": "component",
-      "repeatable": true,
-      "component": "block-text.block-text"
+    "Title": {
+      "type": "string"
+    },
+    "Text": {
+      "type": "richtext"
     }
   }
 }
