@@ -848,25 +848,11 @@
                         }
                       }
                     },
-                    "BlockText": {
-                      "type": "array",
-                      "items": {
-                        "type": "object",
-                        "required": [
-                          "id"
-                        ],
-                        "properties": {
-                          "id": {
-                            "type": "string"
-                          },
-                          "Title": {
-                            "type": "string"
-                          },
-                          "Text": {
-                            "type": "string"
-                          }
-                        }
-                      }
+                    "Title": {
+                      "type": "string"
+                    },
+                    "Text": {
+                      "type": "string"
                     }
                   },
                   "required": [
@@ -1293,25 +1279,11 @@
                         }
                       }
                     },
-                    "BlockText": {
-                      "type": "array",
-                      "items": {
-                        "type": "object",
-                        "required": [
-                          "id"
-                        ],
-                        "properties": {
-                          "id": {
-                            "type": "string"
-                          },
-                          "Title": {
-                            "type": "string"
-                          },
-                          "Text": {
-                            "type": "string"
-                          }
-                        }
-                      }
+                    "Title": {
+                      "type": "string"
+                    },
+                    "Text": {
+                      "type": "string"
                     }
                   },
                   "required": [
