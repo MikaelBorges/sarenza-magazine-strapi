@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_module_trio_qrs",
+  "info": {
+    "name": "TrioQR",
+    "icon": "question"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "QuestionsReponses": {
+      "type": "component",
+      "repeatable": true,
+      "component": "module.questions-reponses",
+      "max": 3
+    }
+  }
+}
