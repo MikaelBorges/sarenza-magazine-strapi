@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "01/04/2021 10:30:27 AM"
+    "x-generation-date": "01/05/2021 4:09:14 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -7118,7 +7118,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "edito.edito-court",
+                        "module.identity-card"
                       ]
                     },
                     "id": {
@@ -7149,7 +7150,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "edito.edito-court",
+                        "module.identity-card"
                       ]
                     },
                     "id": {
@@ -7225,7 +7227,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "edito.edito-court",
+                        "module.identity-card"
                       ]
                     },
                     "id": {
@@ -7258,7 +7261,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "edito.edito-court",
+                        "module.identity-card"
                       ]
                     },
                     "id": {
@@ -7323,7 +7327,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "edito.edito-court",
+                        "module.identity-card"
                       ]
                     },
                     "id": {
@@ -7368,7 +7373,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "edito.edito-court",
+                        "module.identity-card"
                       ]
                     },
                     "id": {
@@ -7417,6 +7423,55 @@
                     },
                     "Text": {
                       "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "media.image",
+                        "module.slider-article",
+                        "module.paragraphe",
+                        "module.duo",
+                        "media.video",
+                        "edito.edito-court",
+                        "module.identity-card"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Text": {
+                      "type": "string"
+                    },
+                    "BackgroundColor": {
+                      "type": "string"
+                    },
+                    "Picture": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "url"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "alt": {
+                          "type": "string"
+                        },
+                        "url_mobile": {
+                          "type": "string"
+                        }
+                      }
                     }
                   },
                   "required": [
@@ -7549,7 +7604,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "edito.edito-court",
+                        "module.identity-card"
                       ]
                     },
                     "id": {
@@ -7580,7 +7636,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "edito.edito-court",
+                        "module.identity-card"
                       ]
                     },
                     "id": {
@@ -7656,7 +7713,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "edito.edito-court",
+                        "module.identity-card"
                       ]
                     },
                     "id": {
@@ -7689,7 +7747,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "edito.edito-court",
+                        "module.identity-card"
                       ]
                     },
                     "id": {
@@ -7754,7 +7813,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "edito.edito-court",
+                        "module.identity-card"
                       ]
                     },
                     "id": {
@@ -7799,7 +7859,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "edito.edito-court",
+                        "module.identity-card"
                       ]
                     },
                     "id": {
@@ -7848,6 +7909,55 @@
                     },
                     "Text": {
                       "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "media.image",
+                        "module.slider-article",
+                        "module.paragraphe",
+                        "module.duo",
+                        "media.video",
+                        "edito.edito-court",
+                        "module.identity-card"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Text": {
+                      "type": "string"
+                    },
+                    "BackgroundColor": {
+                      "type": "string"
+                    },
+                    "Picture": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "url"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "alt": {
+                          "type": "string"
+                        },
+                        "url_mobile": {
+                          "type": "string"
+                        }
+                      }
                     }
                   },
                   "required": [
