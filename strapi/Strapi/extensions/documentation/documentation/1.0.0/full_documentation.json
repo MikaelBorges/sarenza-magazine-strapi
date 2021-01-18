@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "01/18/2021 2:44:32 PM"
+    "x-generation-date": "01/18/2021 6:23:38 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -7374,23 +7374,6 @@
                     "id": {
                       "type": "string"
                     },
-                    "BlockText": {
-                      "type": "object",
-                      "required": [
-                        "id"
-                      ],
-                      "properties": {
-                        "id": {
-                          "type": "string"
-                        },
-                        "Title": {
-                          "type": "string"
-                        },
-                        "Text": {
-                          "type": "string"
-                        }
-                      }
-                    },
                     "Image": {
                       "type": "object",
                       "required": [
@@ -7428,6 +7411,12 @@
                           "type": "string"
                         }
                       }
+                    },
+                    "Title": {
+                      "type": "string"
+                    },
+                    "Text": {
+                      "type": "string"
                     }
                   },
                   "required": [
@@ -7816,23 +7805,6 @@
                     "id": {
                       "type": "string"
                     },
-                    "BlockText": {
-                      "type": "object",
-                      "required": [
-                        "id"
-                      ],
-                      "properties": {
-                        "id": {
-                          "type": "string"
-                        },
-                        "Title": {
-                          "type": "string"
-                        },
-                        "Text": {
-                          "type": "string"
-                        }
-                      }
-                    },
                     "Image": {
                       "type": "object",
                       "required": [
@@ -7870,6 +7842,12 @@
                           "type": "string"
                         }
                       }
+                    },
+                    "Title": {
+                      "type": "string"
+                    },
+                    "Text": {
+                      "type": "string"
                     }
                   },
                   "required": [

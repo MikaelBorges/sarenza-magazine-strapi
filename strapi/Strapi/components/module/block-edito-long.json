@@ -2,15 +2,11 @@
   "collectionName": "components_module_block_edito_longs",
   "info": {
     "name": "Block-Edito-Long",
-    "icon": "address-card"
+    "icon": "address-card",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "BlockText": {
-      "type": "component",
-      "repeatable": false,
-      "component": "block-text.block-text"
-    },
     "Image": {
       "type": "component",
       "repeatable": false,
@@ -20,6 +16,12 @@
       "type": "component",
       "repeatable": false,
       "component": "input.button"
+    },
+    "Title": {
+      "type": "string"
+    },
+    "Text": {
+      "type": "richtext"
     }
   }
 }

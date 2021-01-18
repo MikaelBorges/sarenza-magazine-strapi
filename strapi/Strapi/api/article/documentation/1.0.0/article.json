@@ -810,23 +810,6 @@
                     "id": {
                       "type": "string"
                     },
-                    "BlockText": {
-                      "type": "object",
-                      "required": [
-                        "id"
-                      ],
-                      "properties": {
-                        "id": {
-                          "type": "string"
-                        },
-                        "Title": {
-                          "type": "string"
-                        },
-                        "Text": {
-                          "type": "string"
-                        }
-                      }
-                    },
                     "Image": {
                       "type": "object",
                       "required": [
@@ -864,6 +847,12 @@
                           "type": "string"
                         }
                       }
+                    },
+                    "Title": {
+                      "type": "string"
+                    },
+                    "Text": {
+                      "type": "string"
                     }
                   },
                   "required": [
@@ -1252,23 +1241,6 @@
                     "id": {
                       "type": "string"
                     },
-                    "BlockText": {
-                      "type": "object",
-                      "required": [
-                        "id"
-                      ],
-                      "properties": {
-                        "id": {
-                          "type": "string"
-                        },
-                        "Title": {
-                          "type": "string"
-                        },
-                        "Text": {
-                          "type": "string"
-                        }
-                      }
-                    },
                     "Image": {
                       "type": "object",
                       "required": [
@@ -1306,6 +1278,12 @@
                           "type": "string"
                         }
                       }
+                    },
+                    "Title": {
+                      "type": "string"
+                    },
+                    "Text": {
+                      "type": "string"
                     }
                   },
                   "required": [
