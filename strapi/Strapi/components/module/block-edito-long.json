@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_module_block_edito_longs",
+  "info": {
+    "name": "Block-Edito-Long",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "BlockText": {
+      "type": "component",
+      "repeatable": false,
+      "component": "block-text.block-text"
+    },
+    "Image": {
+      "type": "component",
+      "repeatable": false,
+      "component": "media.image"
+    },
+    "Button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "input.button"
+    }
+  }
+}

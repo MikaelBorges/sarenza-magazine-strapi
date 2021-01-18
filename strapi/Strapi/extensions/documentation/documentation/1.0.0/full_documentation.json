@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "12/14/2020 6:58:50 PM"
+    "x-generation-date": "01/18/2021 2:44:32 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -7118,7 +7118,7 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "module.block-edito-long"
                       ]
                     },
                     "id": {
@@ -7149,7 +7149,7 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "module.block-edito-long"
                       ]
                     },
                     "id": {
@@ -7225,7 +7225,7 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "module.block-edito-long"
                       ]
                     },
                     "id": {
@@ -7258,7 +7258,7 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "module.block-edito-long"
                       ]
                     },
                     "id": {
@@ -7323,7 +7323,7 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "module.block-edito-long"
                       ]
                     },
                     "id": {
@@ -7368,13 +7368,13 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "module.block-edito-long"
                       ]
                     },
                     "id": {
                       "type": "string"
                     },
-                    "Button": {
+                    "BlockText": {
                       "type": "object",
                       "required": [
                         "id"
@@ -7383,10 +7383,10 @@
                         "id": {
                           "type": "string"
                         },
-                        "label": {
+                        "Title": {
                           "type": "string"
                         },
-                        "link": {
+                        "Text": {
                           "type": "string"
                         }
                       }
@@ -7412,23 +7412,20 @@
                         }
                       }
                     },
-                    "BlockText": {
-                      "type": "array",
-                      "items": {
-                        "type": "object",
-                        "required": [
-                          "id"
-                        ],
-                        "properties": {
-                          "id": {
-                            "type": "string"
-                          },
-                          "Title": {
-                            "type": "string"
-                          },
-                          "Text": {
-                            "type": "string"
-                          }
+                    "Button": {
+                      "type": "object",
+                      "required": [
+                        "id"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "label": {
+                          "type": "string"
+                        },
+                        "link": {
+                          "type": "string"
                         }
                       }
                     }
@@ -7563,7 +7560,7 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "module.block-edito-long"
                       ]
                     },
                     "id": {
@@ -7594,7 +7591,7 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "module.block-edito-long"
                       ]
                     },
                     "id": {
@@ -7670,7 +7667,7 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "module.block-edito-long"
                       ]
                     },
                     "id": {
@@ -7703,7 +7700,7 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "module.block-edito-long"
                       ]
                     },
                     "id": {
@@ -7768,7 +7765,7 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "module.block-edito-long"
                       ]
                     },
                     "id": {
@@ -7813,13 +7810,13 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "module.block-edito-long"
                       ]
                     },
                     "id": {
                       "type": "string"
                     },
-                    "Button": {
+                    "BlockText": {
                       "type": "object",
                       "required": [
                         "id"
@@ -7828,10 +7825,10 @@
                         "id": {
                           "type": "string"
                         },
-                        "label": {
+                        "Title": {
                           "type": "string"
                         },
-                        "link": {
+                        "Text": {
                           "type": "string"
                         }
                       }
@@ -7857,23 +7854,20 @@
                         }
                       }
                     },
-                    "BlockText": {
-                      "type": "array",
-                      "items": {
-                        "type": "object",
-                        "required": [
-                          "id"
-                        ],
-                        "properties": {
-                          "id": {
-                            "type": "string"
-                          },
-                          "Title": {
-                            "type": "string"
-                          },
-                          "Text": {
-                            "type": "string"
-                          }
+                    "Button": {
+                      "type": "object",
+                      "required": [
+                        "id"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "label": {
+                          "type": "string"
+                        },
+                        "link": {
+                          "type": "string"
                         }
                       }
                     }
