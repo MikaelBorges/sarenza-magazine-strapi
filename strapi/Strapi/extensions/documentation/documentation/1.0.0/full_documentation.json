@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "01/15/2021 11:42:43 AM"
+    "x-generation-date": "01/18/2021 6:43:11 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -7835,24 +7835,6 @@
               }
             }
           },
-          "metaSeo": {
-            "type": "object",
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "title": {
-                "type": "string"
-              },
-              "description": {
-                "type": "string",
-                "maxLength": 170
-              }
-            }
-          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -8225,24 +8207,6 @@
             "type": "array",
             "items": {
               "type": "string"
-            }
-          },
-          "metaSeo": {
-            "type": "object",
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "title": {
-                "type": "string"
-              },
-              "description": {
-                "type": "string",
-                "maxLength": 170
-              }
             }
           },
           "published_at": {
@@ -9332,9 +9296,6 @@
                   "type": "string"
                 }
               },
-              "metaSeo": {
-                "type": "component"
-              },
               "published_at": {
                 "type": "string"
               },
@@ -9770,9 +9731,6 @@
                     "type": "string"
                   }
                 },
-                "metaSeo": {
-                  "type": "component"
-                },
                 "published_at": {
                   "type": "string"
                 },
@@ -9976,9 +9934,6 @@
                   "items": {
                     "type": "string"
                   }
-                },
-                "metaSeo": {
-                  "type": "component"
                 },
                 "published_at": {
                   "type": "string"
