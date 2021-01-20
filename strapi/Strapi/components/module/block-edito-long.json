@@ -1,21 +1,21 @@
 {
-  "collectionName": "components_edito_edito_courts",
+  "collectionName": "components_module_block_edito_longs",
   "info": {
-    "name": "Edito-court",
-    "icon": "align-center",
+    "name": "Block-Edito-Long",
+    "icon": "address-card",
     "description": ""
   },
   "options": {},
   "attributes": {
-    "Button": {
-      "type": "component",
-      "repeatable": false,
-      "component": "input.button"
-    },
     "Image": {
       "type": "component",
       "repeatable": false,
       "component": "media.image"
+    },
+    "Button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "input.button"
     },
     "Title": {
       "type": "string"

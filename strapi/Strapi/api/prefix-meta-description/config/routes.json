@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/prefix-meta-description",
+      "handler": "prefix-meta-description.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/prefix-meta-description",
+      "handler": "prefix-meta-description.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/prefix-meta-description",
+      "handler": "prefix-meta-description.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
