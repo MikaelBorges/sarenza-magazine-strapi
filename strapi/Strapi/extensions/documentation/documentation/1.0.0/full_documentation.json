@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "01/04/2021 10:30:27 AM"
+    "x-generation-date": "01/18/2021 6:23:38 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -7118,7 +7118,7 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "module.block-edito-long"
                       ]
                     },
                     "id": {
@@ -7149,7 +7149,7 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "module.block-edito-long"
                       ]
                     },
                     "id": {
@@ -7225,7 +7225,7 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "module.block-edito-long"
                       ]
                     },
                     "id": {
@@ -7258,7 +7258,7 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "module.block-edito-long"
                       ]
                     },
                     "id": {
@@ -7323,7 +7323,7 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "module.block-edito-long"
                       ]
                     },
                     "id": {
@@ -7368,28 +7368,11 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "module.block-edito-long"
                       ]
                     },
                     "id": {
                       "type": "string"
-                    },
-                    "Button": {
-                      "type": "object",
-                      "required": [
-                        "id"
-                      ],
-                      "properties": {
-                        "id": {
-                          "type": "string"
-                        },
-                        "label": {
-                          "type": "string"
-                        },
-                        "link": {
-                          "type": "string"
-                        }
-                      }
                     },
                     "Image": {
                       "type": "object",
@@ -7408,6 +7391,23 @@
                           "type": "string"
                         },
                         "url_mobile": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "Button": {
+                      "type": "object",
+                      "required": [
+                        "id"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "label": {
+                          "type": "string"
+                        },
+                        "link": {
                           "type": "string"
                         }
                       }
@@ -7549,7 +7549,7 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "module.block-edito-long"
                       ]
                     },
                     "id": {
@@ -7580,7 +7580,7 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "module.block-edito-long"
                       ]
                     },
                     "id": {
@@ -7656,7 +7656,7 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "module.block-edito-long"
                       ]
                     },
                     "id": {
@@ -7689,7 +7689,7 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "module.block-edito-long"
                       ]
                     },
                     "id": {
@@ -7754,7 +7754,7 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "module.block-edito-long"
                       ]
                     },
                     "id": {
@@ -7799,28 +7799,11 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "module.block-edito-long"
                       ]
                     },
                     "id": {
                       "type": "string"
-                    },
-                    "Button": {
-                      "type": "object",
-                      "required": [
-                        "id"
-                      ],
-                      "properties": {
-                        "id": {
-                          "type": "string"
-                        },
-                        "label": {
-                          "type": "string"
-                        },
-                        "link": {
-                          "type": "string"
-                        }
-                      }
                     },
                     "Image": {
                       "type": "object",
@@ -7839,6 +7822,23 @@
                           "type": "string"
                         },
                         "url_mobile": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "Button": {
+                      "type": "object",
+                      "required": [
+                        "id"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "label": {
+                          "type": "string"
+                        },
+                        "link": {
                           "type": "string"
                         }
                       }
