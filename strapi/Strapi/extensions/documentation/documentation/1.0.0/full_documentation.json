@@ -7430,7 +7430,7 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "module.block-edito-long"
                       ]
                     },
                     "id": {
@@ -7461,7 +7461,7 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "module.block-edito-long"
                       ]
                     },
                     "id": {
@@ -7537,7 +7537,7 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "module.block-edito-long"
                       ]
                     },
                     "id": {
@@ -7570,7 +7570,7 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "module.block-edito-long"
                       ]
                     },
                     "id": {
@@ -7635,7 +7635,7 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "module.block-edito-long"
                       ]
                     },
                     "id": {
@@ -7680,28 +7680,11 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "module.block-edito-long"
                       ]
                     },
                     "id": {
                       "type": "string"
-                    },
-                    "Button": {
-                      "type": "object",
-                      "required": [
-                        "id"
-                      ],
-                      "properties": {
-                        "id": {
-                          "type": "string"
-                        },
-                        "label": {
-                          "type": "string"
-                        },
-                        "link": {
-                          "type": "string"
-                        }
-                      }
                     },
                     "Image": {
                       "type": "object",
@@ -7724,25 +7707,28 @@
                         }
                       }
                     },
-                    "BlockText": {
-                      "type": "array",
-                      "items": {
-                        "type": "object",
-                        "required": [
-                          "id"
-                        ],
-                        "properties": {
-                          "id": {
-                            "type": "string"
-                          },
-                          "Title": {
-                            "type": "string"
-                          },
-                          "Text": {
-                            "type": "string"
-                          }
+                    "Button": {
+                      "type": "object",
+                      "required": [
+                        "id"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "label": {
+                          "type": "string"
+                        },
+                        "link": {
+                          "type": "string"
                         }
                       }
+                    },
+                    "Title": {
+                      "type": "string"
+                    },
+                    "Text": {
+                      "type": "string"
                     }
                   },
                   "required": [
@@ -7875,7 +7861,7 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "module.block-edito-long"
                       ]
                     },
                     "id": {
@@ -7906,7 +7892,7 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "module.block-edito-long"
                       ]
                     },
                     "id": {
@@ -7982,7 +7968,7 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "module.block-edito-long"
                       ]
                     },
                     "id": {
@@ -8015,7 +8001,7 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "module.block-edito-long"
                       ]
                     },
                     "id": {
@@ -8080,7 +8066,7 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "module.block-edito-long"
                       ]
                     },
                     "id": {
@@ -8125,28 +8111,11 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court"
+                        "module.block-edito-long"
                       ]
                     },
                     "id": {
                       "type": "string"
-                    },
-                    "Button": {
-                      "type": "object",
-                      "required": [
-                        "id"
-                      ],
-                      "properties": {
-                        "id": {
-                          "type": "string"
-                        },
-                        "label": {
-                          "type": "string"
-                        },
-                        "link": {
-                          "type": "string"
-                        }
-                      }
                     },
                     "Image": {
                       "type": "object",
@@ -8169,25 +8138,28 @@
                         }
                       }
                     },
-                    "BlockText": {
-                      "type": "array",
-                      "items": {
-                        "type": "object",
-                        "required": [
-                          "id"
-                        ],
-                        "properties": {
-                          "id": {
-                            "type": "string"
-                          },
-                          "Title": {
-                            "type": "string"
-                          },
-                          "Text": {
-                            "type": "string"
-                          }
+                    "Button": {
+                      "type": "object",
+                      "required": [
+                        "id"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "label": {
+                          "type": "string"
+                        },
+                        "link": {
+                          "type": "string"
                         }
                       }
+                    },
+                    "Title": {
+                      "type": "string"
+                    },
+                    "Text": {
+                      "type": "string"
                     }
                   },
                   "required": [
