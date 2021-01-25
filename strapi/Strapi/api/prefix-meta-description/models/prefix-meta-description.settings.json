@@ -1,0 +1,17 @@
+{
+  "kind": "singleType",
+  "collectionName": "prefix_meta_descriptions",
+  "info": {
+    "name": "PrefixMetaDescription"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "prefix": {
+      "type": "string"
+    }
+  }
+}

@@ -38,8 +38,8 @@
         "module.paragraphe",
         "module.duo",
         "media.video",
-        "edito.edito-court",
-        "module.ligne-produit"
+        "module.ligne-produit",
+        "module.block-edito-long"
       ]
     },
     "rubriques": {
