@@ -553,7 +553,8 @@
                         "module.slider-article",
                         "module.paragraphe",
                         "module.duo",
-                        "media.video"
+                        "media.video",
+                        "module.block-edito-long"
                       ]
                     },
                     "id": {
@@ -583,7 +584,8 @@
                         "module.slider-article",
                         "module.paragraphe",
                         "module.duo",
-                        "media.video"
+                        "media.video",
+                        "module.block-edito-long"
                       ]
                     },
                     "id": {
@@ -658,7 +660,8 @@
                         "module.slider-article",
                         "module.paragraphe",
                         "module.duo",
-                        "media.video"
+                        "media.video",
+                        "module.block-edito-long"
                       ]
                     },
                     "id": {
@@ -690,7 +693,8 @@
                         "module.slider-article",
                         "module.paragraphe",
                         "module.duo",
-                        "media.video"
+                        "media.video",
+                        "module.block-edito-long"
                       ]
                     },
                     "id": {
@@ -754,7 +758,8 @@
                         "module.slider-article",
                         "module.paragraphe",
                         "module.duo",
-                        "media.video"
+                        "media.video",
+                        "module.block-edito-long"
                       ]
                     },
                     "id": {
@@ -782,6 +787,71 @@
                       }
                     },
                     "iframe_url": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "media.image",
+                        "module.slider-article",
+                        "module.paragraphe",
+                        "module.duo",
+                        "media.video",
+                        "module.block-edito-long"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Image": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "url"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "alt": {
+                          "type": "string"
+                        },
+                        "url_mobile": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "Button": {
+                      "type": "object",
+                      "required": [
+                        "id"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "label": {
+                          "type": "string"
+                        },
+                        "link": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "Title": {
+                      "type": "string"
+                    },
+                    "Text": {
                       "type": "string"
                     }
                   },
@@ -914,7 +984,8 @@
                         "module.slider-article",
                         "module.paragraphe",
                         "module.duo",
-                        "media.video"
+                        "media.video",
+                        "module.block-edito-long"
                       ]
                     },
                     "id": {
@@ -944,7 +1015,8 @@
                         "module.slider-article",
                         "module.paragraphe",
                         "module.duo",
-                        "media.video"
+                        "media.video",
+                        "module.block-edito-long"
                       ]
                     },
                     "id": {
@@ -1019,7 +1091,8 @@
                         "module.slider-article",
                         "module.paragraphe",
                         "module.duo",
-                        "media.video"
+                        "media.video",
+                        "module.block-edito-long"
                       ]
                     },
                     "id": {
@@ -1051,7 +1124,8 @@
                         "module.slider-article",
                         "module.paragraphe",
                         "module.duo",
-                        "media.video"
+                        "media.video",
+                        "module.block-edito-long"
                       ]
                     },
                     "id": {
@@ -1115,7 +1189,8 @@
                         "module.slider-article",
                         "module.paragraphe",
                         "module.duo",
-                        "media.video"
+                        "media.video",
+                        "module.block-edito-long"
                       ]
                     },
                     "id": {
@@ -1143,6 +1218,71 @@
                       }
                     },
                     "iframe_url": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "media.image",
+                        "module.slider-article",
+                        "module.paragraphe",
+                        "module.duo",
+                        "media.video",
+                        "module.block-edito-long"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Image": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "url"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "alt": {
+                          "type": "string"
+                        },
+                        "url_mobile": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "Button": {
+                      "type": "object",
+                      "required": [
+                        "id"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "label": {
+                          "type": "string"
+                        },
+                        "link": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "Title": {
+                      "type": "string"
+                    },
+                    "Text": {
                       "type": "string"
                     }
                   },

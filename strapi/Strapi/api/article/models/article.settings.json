@@ -37,7 +37,8 @@
         "module.slider-article",
         "module.paragraphe",
         "module.duo",
-        "media.video"
+        "media.video",
+        "module.block-edito-long"
       ]
     },
     "rubriques": {
