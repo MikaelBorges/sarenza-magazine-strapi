@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "01/18/2021 6:43:11 PM"
+    "x-generation-date": "01/25/2021 7:13:36 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -7430,7 +7430,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.block-edito-long"
+                        "module.block-edito-long",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -7461,7 +7462,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.block-edito-long"
+                        "module.block-edito-long",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -7537,7 +7539,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.block-edito-long"
+                        "module.block-edito-long",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -7570,7 +7573,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.block-edito-long"
+                        "module.block-edito-long",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -7635,7 +7639,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.block-edito-long"
+                        "module.block-edito-long",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -7680,7 +7685,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.block-edito-long"
+                        "module.block-edito-long",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -7729,6 +7735,54 @@
                     },
                     "Text": {
                       "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "media.image",
+                        "module.slider-article",
+                        "module.paragraphe",
+                        "module.duo",
+                        "media.video",
+                        "module.block-edito-long",
+                        "module.ligne-produit"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "ProductCard": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "url_image": {
+                            "type": "string"
+                          },
+                          "pcid": {
+                            "type": "integer"
+                          },
+                          "url_cta": {
+                            "type": "string"
+                          },
+                          "url_text": {
+                            "type": "string"
+                          }
+                        }
+                      }
                     }
                   },
                   "required": [
@@ -7861,7 +7915,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.block-edito-long"
+                        "module.block-edito-long",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -7892,7 +7947,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.block-edito-long"
+                        "module.block-edito-long",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -7968,7 +8024,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.block-edito-long"
+                        "module.block-edito-long",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -8001,7 +8058,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.block-edito-long"
+                        "module.block-edito-long",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -8066,7 +8124,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.block-edito-long"
+                        "module.block-edito-long",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -8111,7 +8170,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.block-edito-long"
+                        "module.block-edito-long",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -8160,6 +8220,54 @@
                     },
                     "Text": {
                       "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "media.image",
+                        "module.slider-article",
+                        "module.paragraphe",
+                        "module.duo",
+                        "media.video",
+                        "module.block-edito-long",
+                        "module.ligne-produit"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "ProductCard": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "url_image": {
+                            "type": "string"
+                          },
+                          "pcid": {
+                            "type": "integer"
+                          },
+                          "url_cta": {
+                            "type": "string"
+                          },
+                          "url_text": {
+                            "type": "string"
+                          }
+                        }
+                      }
                     }
                   },
                   "required": [

@@ -554,7 +554,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.block-edito-long"
+                        "module.block-edito-long",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -585,7 +586,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.block-edito-long"
+                        "module.block-edito-long",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -661,7 +663,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.block-edito-long"
+                        "module.block-edito-long",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -694,7 +697,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.block-edito-long"
+                        "module.block-edito-long",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -759,7 +763,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.block-edito-long"
+                        "module.block-edito-long",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -804,7 +809,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.block-edito-long"
+                        "module.block-edito-long",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -853,6 +859,54 @@
                     },
                     "Text": {
                       "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "media.image",
+                        "module.slider-article",
+                        "module.paragraphe",
+                        "module.duo",
+                        "media.video",
+                        "module.block-edito-long",
+                        "module.ligne-produit"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "ProductCard": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "url_image": {
+                            "type": "string"
+                          },
+                          "pcid": {
+                            "type": "integer"
+                          },
+                          "url_cta": {
+                            "type": "string"
+                          },
+                          "url_text": {
+                            "type": "string"
+                          }
+                        }
+                      }
                     }
                   },
                   "required": [
@@ -985,7 +1039,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.block-edito-long"
+                        "module.block-edito-long",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -1016,7 +1071,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.block-edito-long"
+                        "module.block-edito-long",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -1092,7 +1148,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.block-edito-long"
+                        "module.block-edito-long",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -1125,7 +1182,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.block-edito-long"
+                        "module.block-edito-long",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -1190,7 +1248,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.block-edito-long"
+                        "module.block-edito-long",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -1235,7 +1294,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.block-edito-long"
+                        "module.block-edito-long",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -1284,6 +1344,54 @@
                     },
                     "Text": {
                       "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "media.image",
+                        "module.slider-article",
+                        "module.paragraphe",
+                        "module.duo",
+                        "media.video",
+                        "module.block-edito-long",
+                        "module.ligne-produit"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "ProductCard": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "url_image": {
+                            "type": "string"
+                          },
+                          "pcid": {
+                            "type": "integer"
+                          },
+                          "url_cta": {
+                            "type": "string"
+                          },
+                          "url_text": {
+                            "type": "string"
+                          }
+                        }
+                      }
                     }
                   },
                   "required": [
