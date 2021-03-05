@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_module_ligne_produits",
+  "info": {
+    "name": "Ligne Produit",
+    "icon": "arrow-alt-circle-right"
+  },
+  "options": {},
+  "attributes": {
+    "ProductCard": {
+      "type": "component",
+      "repeatable": true,
+      "component": "module.product-card"
+    }
+  }
+}
