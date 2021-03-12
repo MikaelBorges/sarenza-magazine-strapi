@@ -84,8 +84,8 @@ if($rebuildContainer -eq $true)
     docker-compose build $forceBuildParameter
     az acr login -n srzlab
     docker-compose push
-    gcloud container clusters get-credentials $subscription --zone europe-west1-b --project $project
 }
 
+gcloud container clusters get-credentials $subscription --zone europe-west1-b --project $project
 
 helm upgrade -i $forceDeployParameter --set replicaCount=$replicaCount --set image.tag=$version --wait  strapi ./helm/sarenza-digitalexperience-cms-strapi --tiller-namespace $tiller --namespace $ns
