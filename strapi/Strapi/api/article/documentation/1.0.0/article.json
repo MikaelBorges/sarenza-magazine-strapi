@@ -999,6 +999,9 @@
               }
             }
           },
+          "isHeadline": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -1412,6 +1415,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "isHeadline": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
