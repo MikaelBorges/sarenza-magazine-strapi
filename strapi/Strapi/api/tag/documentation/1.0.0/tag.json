@@ -572,7 +572,7 @@
                   }
                 },
                 "isHeadline": {
-                  "type": "string"
+                  "type": "boolean"
                 },
                 "published_at": {
                   "type": "string"

@@ -53,8 +53,8 @@
       "dominant": true
     },
     "isHeadline": {
-      "type": "string",
-      "private": false
+      "type": "boolean",
+      "default": false
     }
   }
 }

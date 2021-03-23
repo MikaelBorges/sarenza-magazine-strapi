@@ -1000,7 +1000,8 @@
             }
           },
           "isHeadline": {
-            "type": "string"
+            "type": "boolean",
+            "default": false
           },
           "published_at": {
             "type": "string",
@@ -1417,7 +1418,8 @@
             }
           },
           "isHeadline": {
-            "type": "string"
+            "type": "boolean",
+            "default": false
           },
           "published_at": {
             "type": "string",
