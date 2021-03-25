@@ -793,6 +793,9 @@
                     },
                     "iframe_url": {
                       "type": "string"
+                    },
+                    "iframe_page": {
+                      "type": "string"
                     }
                   },
                   "required": [
@@ -1277,6 +1280,9 @@
                       }
                     },
                     "iframe_url": {
+                      "type": "string"
+                    },
+                    "iframe_page": {
                       "type": "string"
                     }
                   },
