@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "03/23/2021 9:16:51 AM"
+    "x-generation-date": "03/25/2021 9:32:02 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -7669,6 +7669,9 @@
                     },
                     "iframe_url": {
                       "type": "string"
+                    },
+                    "iframe_page": {
+                      "type": "string"
                     }
                   },
                   "required": [
@@ -7874,10 +7877,6 @@
                 }
               }
             }
-          },
-          "isHeadline": {
-            "type": "boolean",
-            "default": false
           },
           "published_at": {
             "type": "string",
@@ -8158,6 +8157,9 @@
                     },
                     "iframe_url": {
                       "type": "string"
+                    },
+                    "iframe_page": {
+                      "type": "string"
                     }
                   },
                   "required": [
@@ -8292,10 +8294,6 @@
             "items": {
               "type": "string"
             }
-          },
-          "isHeadline": {
-            "type": "boolean",
-            "default": false
           },
           "published_at": {
             "type": "string",
@@ -9384,9 +9382,6 @@
                   "type": "string"
                 }
               },
-              "isHeadline": {
-                "type": "boolean"
-              },
               "published_at": {
                 "type": "string"
               },
@@ -9822,9 +9817,6 @@
                     "type": "string"
                   }
                 },
-                "isHeadline": {
-                  "type": "boolean"
-                },
                 "published_at": {
                   "type": "string"
                 },
@@ -10028,9 +10020,6 @@
                   "items": {
                     "type": "string"
                   }
-                },
-                "isHeadline": {
-                  "type": "boolean"
                 },
                 "published_at": {
                   "type": "string"
