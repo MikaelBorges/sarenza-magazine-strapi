@@ -24,6 +24,8 @@ COPY ./Strapi .
 
 RUN apk update && apk add -q dos2unix
 
+RUN set -ex && apk --no-cache add sudo
+
 RUN dos2unix ./init.sh 
 
 RUN chmod +x ./init.sh 
