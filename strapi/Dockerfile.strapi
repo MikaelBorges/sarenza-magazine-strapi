@@ -22,26 +22,11 @@ ENV DOCKER true
 
 COPY ./Strapi .
 
-RUN apk update && apk add -q dos2unix
-
-RUN set -ex && apk --no-cache add sudo
-
-RUN dos2unix ./init.sh 
-
-RUN chmod +x ./init.sh 
-
-RUN sudo ./init.sh 
-RUN yarn install
+COPY ./entrypoint.sh /usr/local/bin/
 
 WORKDIR /srv/app
 
-RUN yarn global add strapi@${strapi_version} && strapi build
-
-COPY ./entrypoint.sh /usr/local/bin/
-
-RUN dos2unix /usr/local/bin/entrypoint.sh && apk del dos2unix
-
-RUN chmod +x /usr/local/bin/entrypoint.sh
+RUN apk update && set -ex && apk add --no-cache -q dos2unix sudo && dos2unix ./init.sh && chmod +x ./init.sh && sudo ./init.sh && yarn install && yarn global add strapi@${strapi_version} && strapi build && dos2unix /usr/local/bin/entrypoint.sh && apk del dos2unix && chmod +x /usr/local/bin/entrypoint.sh
 
 ENTRYPOINT ["entrypoint.sh"]
 
