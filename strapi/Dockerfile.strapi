@@ -6,6 +6,10 @@ FROM node:${NODE_VERSION}
 EXPOSE 1337
 EXPOSE 8000
 
+RUN apk update && apk add -q dos2unix
+
+RUN set -ex && apk --no-cache add sudo
+
 RUN mkdir /srv/app && chown 1000:1000 -R /srv/app
 
 WORKDIR /srv/app
@@ -22,12 +26,20 @@ ENV DOCKER true
 
 COPY ./Strapi .
 
-COPY ./entrypoint.sh /usr/local/bin/
+RUN dos2unix ./init.sh 
+RUN chmod +x ./init.sh 
+RUN sudo ./init.sh 
+
+RUN yarn install --only=production
 
 WORKDIR /srv/app
 
-RUN apk update && set -ex && apk add --no-cache -q dos2unix sudo && dos2unix ./init.sh && chmod +x ./init.sh && sudo ./init.sh && yarn install && yarn global add strapi@${strapi_version} && strapi build && dos2unix /usr/local/bin/entrypoint.sh && apk del dos2unix && chmod +x /usr/local/bin/entrypoint.sh
+RUN yarn global add strapi@${strapi_version} && NODE_ENV=production strapi build
+
+COPY ./entrypoint.sh /usr/local/bin/
+RUN dos2unix /usr/local/bin/entrypoint.sh && apk del dos2unix && apk del sudo
+RUN chmod +x /usr/local/bin/entrypoint.sh
 
 ENTRYPOINT ["entrypoint.sh"]
 
-CMD ["yarn", "start"]
+CMD ["strapi", "start"]
