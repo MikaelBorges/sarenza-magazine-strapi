@@ -10,7 +10,7 @@ for d in plugins/*/; do
         echo "$cd is on and ready to go"
         sudo dos2unix ./init.sh
         sudo chmod +s ./init.sh
-        ./init.sh
+        sudo ./init.sh
         eval "cd $rootFolder"
     fi
 done
