@@ -30,7 +30,8 @@ RUN dos2unix ./init.sh
 
 RUN chmod +x ./init.sh 
 
-RUN ./init.sh && yarn install
+RUN sudo ./init.sh 
+RUN yarn install
 
 WORKDIR /srv/app
 
