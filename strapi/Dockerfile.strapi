@@ -1,7 +1,7 @@
 ARG NODE_VERSION=12.19.0-alpine3.12
 ARG STRAPI_VERSION=3.2.5
 
-FROM node:${NODE_VERSION}
+FROM node:${NODE_VERSION} AS builder
 
 EXPOSE 1337
 EXPOSE 8000
@@ -22,7 +22,7 @@ ENV DOCKER true
 
 COPY ./Strapi .
 
-RUN yarn install --only=production && dos2unix ./init.sh && chmod +x ./init.sh && sudo ./init.sh 
+RUN yarn install --production --frozen-lockfile && dos2unix ./init.sh && chmod +x ./init.sh && sudo ./init.sh 
 
 WORKDIR /srv/app
 
@@ -32,6 +32,13 @@ COPY ./entrypoint.sh /usr/local/bin/
 
 RUN dos2unix /usr/local/bin/entrypoint.sh && apk del dos2unix && apk del sudo && chmod +x /usr/local/bin/entrypoint.sh
 
+FROM node:${NODE_VERSION} AS runner
+
+COPY --from=builder /srv/app /srv/app
+COPY --from=builder /usr/local/bin/entrypoint.sh /usr/local/bin/entrypoint.sh
+
+WORKDIR /srv/app
+
 ENTRYPOINT ["entrypoint.sh"]
 
-CMD ["strapi", "start"]
+CMD ["yarn", "start"]
