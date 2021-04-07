@@ -8,7 +8,7 @@ for d in plugins/*/; do
 
     if [ -f "./init.sh" ]; then
         echo "$cd is on and ready to go"
-        ./init.sh
+        dos2unix ./init.sh && ./init.sh
         eval "cd $rootFolder"
     fi
 done
