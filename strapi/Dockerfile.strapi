@@ -24,7 +24,11 @@ COPY ./Strapi .
 
 RUN apk update && apk add -q dos2unix
 
-RUN dos2unix ./init.sh && chmod +x ./init.sh && ./init.sh && yarn install
+RUN dos2unix ./init.sh 
+
+RUN chmod +x ./init.sh 
+
+RUN ./init.sh && yarn install
 
 WORKDIR /srv/app
 
