@@ -793,6 +793,9 @@
                     },
                     "iframe_url": {
                       "type": "string"
+                    },
+                    "iframe_page": {
+                      "type": "string"
                     }
                   },
                   "required": [
@@ -998,6 +1001,10 @@
                 }
               }
             }
+          },
+          "isHeadline": {
+            "type": "boolean",
+            "default": false
           },
           "published_at": {
             "type": "string",
@@ -1278,6 +1285,9 @@
                     },
                     "iframe_url": {
                       "type": "string"
+                    },
+                    "iframe_page": {
+                      "type": "string"
                     }
                   },
                   "required": [
@@ -1412,6 +1422,10 @@
             "items": {
               "type": "string"
             }
+          },
+          "isHeadline": {
+            "type": "boolean",
+            "default": false
           },
           "published_at": {
             "type": "string",

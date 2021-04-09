@@ -51,6 +51,10 @@
       "collection": "tag",
       "via": "articles",
       "dominant": true
+    },
+    "isHeadline": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
