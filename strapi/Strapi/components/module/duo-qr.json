@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_module_duo_qrs",
+  "info": {
+    "name": "DuoQR",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Text": {
+      "type": "richtext"
+    },
+    "Image": {
+      "type": "component",
+      "repeatable": false,
+      "component": "media.image"
+    }
+  }
+}
