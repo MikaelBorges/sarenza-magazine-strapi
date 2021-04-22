@@ -556,7 +556,8 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
-                        "module.duo-qr"
+                        "module.duo-qr",
+                        "module.identity-card"
                       ]
                     },
                     "id": {
@@ -589,7 +590,8 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
-                        "module.duo-qr"
+                        "module.duo-qr",
+                        "module.identity-card"
                       ]
                     },
                     "id": {
@@ -667,7 +669,8 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
-                        "module.duo-qr"
+                        "module.duo-qr",
+                        "module.identity-card"
                       ]
                     },
                     "id": {
@@ -702,7 +705,8 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
-                        "module.duo-qr"
+                        "module.duo-qr",
+                        "module.identity-card"
                       ]
                     },
                     "id": {
@@ -769,7 +773,8 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
-                        "module.duo-qr"
+                        "module.duo-qr",
+                        "module.identity-card"
                       ]
                     },
                     "id": {
@@ -819,7 +824,8 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
-                        "module.duo-qr"
+                        "module.duo-qr",
+                        "module.identity-card"
                       ]
                     },
                     "id": {
@@ -945,6 +951,55 @@
                       "type": "string"
                     },
                     "Image": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "url"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "alt": {
+                          "type": "string"
+                        },
+                        "url_mobile": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "media.image",
+                        "module.slider-article",
+                        "module.paragraphe",
+                        "module.duo",
+                        "media.video",
+                        "edito.edito-court",
+                        "module.identity-card"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Text": {
+                      "type": "string"
+                    },
+                    "BackgroundColor": {
+                      "type": "string"
+                    },
+                    "Picture": {
                       "type": "object",
                       "required": [
                         "id",
@@ -1102,7 +1157,8 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
-                        "module.duo-qr"
+                        "module.duo-qr",
+                        "module.identity-card"
                       ]
                     },
                     "id": {
@@ -1135,7 +1191,8 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
-                        "module.duo-qr"
+                        "module.duo-qr",
+                        "module.identity-card"
                       ]
                     },
                     "id": {
@@ -1213,7 +1270,8 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
-                        "module.duo-qr"
+                        "module.duo-qr",
+                        "module.identity-card"
                       ]
                     },
                     "id": {
@@ -1248,7 +1306,8 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
-                        "module.duo-qr"
+                        "module.duo-qr",
+                        "module.identity-card"
                       ]
                     },
                     "id": {
@@ -1315,7 +1374,8 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
-                        "module.duo-qr"
+                        "module.duo-qr",
+                        "module.identity-card"
                       ]
                     },
                     "id": {
@@ -1365,7 +1425,8 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
-                        "module.duo-qr"
+                        "module.duo-qr",
+                        "module.identity-card"
                       ]
                     },
                     "id": {
@@ -1491,6 +1552,61 @@
                       "type": "string"
                     },
                     "Image": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "url"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "alt": {
+                          "type": "string"
+                        },
+                        "url_mobile": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "Title": {
+                      "type": "string"
+                    },
+                    "Text": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "media.image",
+                        "module.slider-article",
+                        "module.paragraphe",
+                        "module.duo",
+                        "media.video",
+                        "edito.edito-court",
+                        "module.identity-card"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Text": {
+                      "type": "string"
+                    },
+                    "BackgroundColor": {
+                      "type": "string"
+                    },
+                    "Picture": {
                       "type": "object",
                       "required": [
                         "id",

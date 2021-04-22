@@ -40,7 +40,8 @@
         "media.video",
         "module.block-edito-long",
         "module.ligne-produit",
-        "module.duo-qr"
+        "module.duo-qr",
+        "module.identity-card"
       ]
     },
     "rubriques": {
