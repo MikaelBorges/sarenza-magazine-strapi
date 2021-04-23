@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "03/25/2021 9:32:02 AM"
+    "x-generation-date": "04/23/2021 5:32:04 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -37,7 +37,7 @@
   ],
   "externalDocs": {
     "description": "Find out more",
-    "url": "https://strapi.io/documentation/v3.x/"
+    "url": "https://strapi.io/documentation/developer-docs/latest/"
   },
   "security": [
     {
@@ -7549,7 +7549,7 @@
                         "module.ligne-produit",
                         "module.duo-qr",
                         "module.identity-card",
-                      "module.trio-qr"
+                        "module.trio-qr"
                       ]
                     },
                     "id": {
@@ -7773,7 +7773,10 @@
                         "module.duo",
                         "media.video",
                         "module.block-edito-long",
-                        "module.ligne-produit"
+                        "module.ligne-produit",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr"
                       ]
                     },
                     "id": {
@@ -7803,7 +7806,8 @@
                             "type": "string"
                           }
                         }
-                      }
+                      },
+                      "maxItems": 12
                     }
                   },
                   "required": [
@@ -7820,7 +7824,11 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.duo-qr"
+                        "module.block-edito-long",
+                        "module.ligne-produit",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr"
                       ]
                     },
                     "id": {
@@ -7831,44 +7839,6 @@
                     },
                     "Text": {
                       "type": "string"
-                    }
-                  },
-                  "required": [
-                    "id"
-                  ]
-                },
-                {
-                  "properties": {
-                    "__component": {
-                      "type": "string",
-                      "enum": [
-                        "media.image",
-                        "module.slider-article",
-                        "module.paragraphe",
-                        "module.duo",
-                        "media.video",
-                        "edito.edito-court",
-                        "module.identity-card"
-                      ]
-                    },
-                    "id": {
-                      "type": "string"
-                    },
-                    "Text": {
-                      "type": "string"
-                    },
-                    "BackgroundColor": {
-                      "type": "string"
-                    },
-                    "Picture": {
-                      "type": "object",
-                      "required": [
-                        "id",
-                        "url"
-                      ],
-                      "properties": {
-                        "id": {
-                          "type": "string"
                     },
                     "Image": {
                       "type": "object",
@@ -7889,21 +7859,8 @@
                         "url_mobile": {
                           "type": "string"
                         }
-                        },
-                        "url": {
-                          "type": "string"
-                        },
-                        "alt": {
-                          "type": "string"
-                        },
-                        "url_mobile": {
-                          "type": "string"
-                        }
-                          }
-                        }
                       }
                     }
-                      }
                   },
                   "required": [
                     "id"
@@ -7919,7 +7876,62 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court",
+                        "module.block-edito-long",
+                        "module.ligne-produit",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Text": {
+                      "type": "string"
+                    },
+                    "BackgroundColor": {
+                      "type": "string"
+                    },
+                    "Picture": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "url"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "alt": {
+                          "type": "string"
+                        },
+                        "url_mobile": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "media.image",
+                        "module.slider-article",
+                        "module.paragraphe",
+                        "module.duo",
+                        "media.video",
+                        "module.block-edito-long",
+                        "module.ligne-produit",
+                        "module.duo-qr",
+                        "module.identity-card",
                         "module.trio-qr"
                       ]
                     },
@@ -7952,7 +7964,6 @@
                         }
                       },
                       "maxItems": 3
-                    }
                     }
                   },
                   "required": [
@@ -8045,6 +8056,10 @@
               }
             }
           },
+          "isHeadline": {
+            "type": "boolean",
+            "default": false
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -8090,7 +8105,7 @@
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr"
-                        ]
+                      ]
                     },
                     "id": {
                       "type": "string"
@@ -8428,7 +8443,10 @@
                         "module.duo",
                         "media.video",
                         "module.block-edito-long",
-                        "module.ligne-produit"
+                        "module.ligne-produit",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr"
                       ]
                     },
                     "id": {
@@ -8458,7 +8476,8 @@
                             "type": "string"
                           }
                         }
-                      }
+                      },
+                      "maxItems": 12
                     }
                   },
                   "required": [
@@ -8475,7 +8494,11 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.duo-qr"
+                        "module.block-edito-long",
+                        "module.ligne-produit",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr"
                       ]
                     },
                     "id": {
@@ -8506,12 +8529,7 @@
                         "url_mobile": {
                           "type": "string"
                         }
-                      }                    },
-                    "Title": {
-                      "type": "string"
-                    },
-                    "Text": {
-                      "type": "string"
+                      }
                     }
                   },
                   "required": [
@@ -8528,8 +8546,11 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court",
-                        "module.identity-card"
+                        "module.block-edito-long",
+                        "module.ligne-produit",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr"
                       ]
                     },
                     "id": {
@@ -8559,7 +8580,6 @@
                         },
                         "url_mobile": {
                           "type": "string"
-                          }
                         }
                       }
                     }
@@ -8578,7 +8598,10 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court",
+                        "module.block-edito-long",
+                        "module.ligne-produit",
+                        "module.duo-qr",
+                        "module.identity-card",
                         "module.trio-qr"
                       ]
                     },
@@ -8631,6 +8654,10 @@
             "items": {
               "type": "string"
             }
+          },
+          "isHeadline": {
+            "type": "boolean",
+            "default": false
           },
           "published_at": {
             "type": "string",
@@ -9719,6 +9746,9 @@
                   "type": "string"
                 }
               },
+              "isHeadline": {
+                "type": "boolean"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -10154,6 +10184,9 @@
                     "type": "string"
                   }
                 },
+                "isHeadline": {
+                  "type": "boolean"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -10357,6 +10390,9 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "isHeadline": {
+                  "type": "boolean"
                 },
                 "published_at": {
                   "type": "string"
