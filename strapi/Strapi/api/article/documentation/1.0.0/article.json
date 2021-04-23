@@ -555,7 +555,10 @@
                         "module.duo",
                         "media.video",
                         "module.block-edito-long",
-                        "module.ligne-produit"
+                        "module.ligne-produit",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr"
                       ]
                     },
                     "id": {
@@ -587,7 +590,10 @@
                         "module.duo",
                         "media.video",
                         "module.block-edito-long",
-                        "module.ligne-produit"
+                        "module.ligne-produit",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr"
                       ]
                     },
                     "id": {
@@ -664,7 +670,10 @@
                         "module.duo",
                         "media.video",
                         "module.block-edito-long",
-                        "module.ligne-produit"
+                        "module.ligne-produit",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr"
                       ]
                     },
                     "id": {
@@ -698,7 +707,10 @@
                         "module.duo",
                         "media.video",
                         "module.block-edito-long",
-                        "module.ligne-produit"
+                        "module.ligne-produit",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr"
                       ]
                     },
                     "id": {
@@ -764,7 +776,10 @@
                         "module.duo",
                         "media.video",
                         "module.block-edito-long",
-                        "module.ligne-produit"
+                        "module.ligne-produit",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr"
                       ]
                     },
                     "id": {
@@ -813,7 +828,10 @@
                         "module.duo",
                         "media.video",
                         "module.block-edito-long",
-                        "module.ligne-produit"
+                        "module.ligne-produit",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr"
                       ]
                     },
                     "id": {
@@ -911,6 +929,152 @@
                         }
                       },
                       "maxItems": 12
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "media.image",
+                        "module.slider-article",
+                        "module.paragraphe",
+                        "module.duo",
+                        "media.video",
+                        "module.duo-qr"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Title": {
+                      "type": "string"
+                    },
+                    "Text": {
+                      "type": "string"
+                    },
+                    "Image": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "url"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "alt": {
+                          "type": "string"
+                        },
+                        "url_mobile": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "media.image",
+                        "module.slider-article",
+                        "module.paragraphe",
+                        "module.duo",
+                        "media.video",
+                        "edito.edito-court",
+                        "module.identity-card"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Text": {
+                      "type": "string"
+                    },
+                    "BackgroundColor": {
+                      "type": "string"
+                    },
+                    "Picture": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "url"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "alt": {
+                          "type": "string"
+                        },
+                        "url_mobile": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "media.image",
+                        "module.slider-article",
+                        "module.paragraphe",
+                        "module.duo",
+                        "media.video",
+                        "edito.edito-court",
+                        "module.trio-qr"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Title": {
+                      "type": "string"
+                    },
+                    "QuestionsReponses": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "Question": {
+                            "type": "string"
+                          },
+                          "Background": {
+                            "type": "string"
+                          },
+                          "Reponse": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "maxItems": 3
                     }
                   },
                   "required": [
@@ -1048,7 +1212,10 @@
                         "module.duo",
                         "media.video",
                         "module.block-edito-long",
-                        "module.ligne-produit"
+                        "module.ligne-produit",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr"
                       ]
                     },
                     "id": {
@@ -1080,7 +1247,10 @@
                         "module.duo",
                         "media.video",
                         "module.block-edito-long",
-                        "module.ligne-produit"
+                        "module.ligne-produit",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr"
                       ]
                     },
                     "id": {
@@ -1157,7 +1327,10 @@
                         "module.duo",
                         "media.video",
                         "module.block-edito-long",
-                        "module.ligne-produit"
+                        "module.ligne-produit",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr"
                       ]
                     },
                     "id": {
@@ -1191,7 +1364,10 @@
                         "module.duo",
                         "media.video",
                         "module.block-edito-long",
-                        "module.ligne-produit"
+                        "module.ligne-produit",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr"
                       ]
                     },
                     "id": {
@@ -1257,7 +1433,10 @@
                         "module.duo",
                         "media.video",
                         "module.block-edito-long",
-                        "module.ligne-produit"
+                        "module.ligne-produit",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr"
                       ]
                     },
                     "id": {
@@ -1306,7 +1485,10 @@
                         "module.duo",
                         "media.video",
                         "module.block-edito-long",
-                        "module.ligne-produit"
+                        "module.ligne-produit",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr"
                       ]
                     },
                     "id": {
@@ -1404,6 +1586,159 @@
                         }
                       },
                       "maxItems": 12
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "media.image",
+                        "module.slider-article",
+                        "module.paragraphe",
+                        "module.duo",
+                        "media.video",
+                        "module.duo-qr"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Title": {
+                      "type": "string"
+                    },
+                    "Text": {
+                      "type": "string"
+                    },
+                    "Image": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "url"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "alt": {
+                          "type": "string"
+                        },
+                        "url_mobile": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "Title": {
+                      "type": "string"
+                    },
+                    "Text": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "media.image",
+                        "module.slider-article",
+                        "module.paragraphe",
+                        "module.duo",
+                        "media.video",
+                        "edito.edito-court",
+                        "module.identity-card"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Text": {
+                      "type": "string"
+                    },
+                    "BackgroundColor": {
+                      "type": "string"
+                    },
+                    "Picture": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "url"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "alt": {
+                          "type": "string"
+                        },
+                        "url_mobile": {
+                          "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "media.image",
+                        "module.slider-article",
+                        "module.paragraphe",
+                        "module.duo",
+                        "media.video",
+                        "edito.edito-court",
+                        "module.trio-qr"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Title": {
+                      "type": "string"
+                    },
+                    "QuestionsReponses": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "Question": {
+                            "type": "string"
+                          },
+                          "Background": {
+                            "type": "string"
+                          },
+                          "Reponse": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "maxItems": 3
                     }
                   },
                   "required": [
