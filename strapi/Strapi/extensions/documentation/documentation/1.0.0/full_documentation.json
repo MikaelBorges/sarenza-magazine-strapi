@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "01/18/2021 6:43:11 PM"
+    "x-generation-date": "03/25/2021 9:32:02 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -7430,8 +7430,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.ligne-produit",
-                        "module.block-edito-long"
+                        "module.block-edito-long",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -7462,8 +7462,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.ligne-produit",
-                        "module.block-edito-long"
+                        "module.block-edito-long",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -7539,8 +7539,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.ligne-produit",
-                        "module.block-edito-long"
+                        "module.block-edito-long",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -7573,8 +7573,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.ligne-produit",
-                        "module.block-edito-long"
+                        "module.block-edito-long",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -7639,8 +7639,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.ligne-produit",
-                        "module.block-edito-long"
+                        "module.block-edito-long",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -7669,6 +7669,9 @@
                     },
                     "iframe_url": {
                       "type": "string"
+                    },
+                    "iframe_page": {
+                      "type": "string"
                     }
                   },
                   "required": [
@@ -7685,8 +7688,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.ligne-produit",
-                        "module.block-edito-long"
+                        "module.block-edito-long",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -7751,7 +7754,7 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court",
+                        "module.block-edito-long",
                         "module.ligne-produit"
                       ]
                     },
@@ -7916,8 +7919,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.ligne-produit",
-                        "module.block-edito-long"
+                        "module.block-edito-long",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -7948,8 +7951,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.ligne-produit",
-                        "module.block-edito-long"
+                        "module.block-edito-long",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -8025,8 +8028,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.ligne-produit",
-                        "module.block-edito-long"
+                        "module.block-edito-long",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -8059,8 +8062,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.ligne-produit",
-                        "module.block-edito-long"
+                        "module.block-edito-long",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -8125,8 +8128,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.ligne-produit",
-                        "module.block-edito-long"
+                        "module.block-edito-long",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -8155,6 +8158,9 @@
                     },
                     "iframe_url": {
                       "type": "string"
+                    },
+                    "iframe_page": {
+                      "type": "string"
                     }
                   },
                   "required": [
@@ -8171,8 +8177,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.ligne-produit",
-                        "module.block-edito-long"
+                        "module.block-edito-long",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -8237,7 +8243,7 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court",
+                        "module.block-edito-long",
                         "module.ligne-produit"
                       ]
                     },

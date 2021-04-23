@@ -554,8 +554,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.ligne-produit",
-                        "module.block-edito-long"
+                        "module.block-edito-long",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -586,8 +586,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.ligne-produit",
-                        "module.block-edito-long"
+                        "module.block-edito-long",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -663,8 +663,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.ligne-produit",
-                        "module.block-edito-long"
+                        "module.block-edito-long",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -697,8 +697,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.ligne-produit",
-                        "module.block-edito-long"
+                        "module.block-edito-long",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -763,8 +763,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.ligne-produit",
-                        "module.block-edito-long"
+                        "module.block-edito-long",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -793,6 +793,9 @@
                     },
                     "iframe_url": {
                       "type": "string"
+                    },
+                    "iframe_page": {
+                      "type": "string"
                     }
                   },
                   "required": [
@@ -809,8 +812,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.ligne-produit",
-                        "module.block-edito-long"
+                        "module.block-edito-long",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -875,7 +878,7 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court",
+                        "module.block-edito-long",
                         "module.ligne-produit"
                       ]
                     },
@@ -1000,6 +1003,10 @@
               }
             }
           },
+          "isHeadline": {
+            "type": "boolean",
+            "default": false
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -1040,8 +1047,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.ligne-produit",
-                        "module.block-edito-long"
+                        "module.block-edito-long",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -1072,8 +1079,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.ligne-produit",
-                        "module.block-edito-long"
+                        "module.block-edito-long",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -1149,8 +1156,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.ligne-produit",
-                        "module.block-edito-long"
+                        "module.block-edito-long",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -1183,8 +1190,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.ligne-produit",
-                        "module.block-edito-long"
+                        "module.block-edito-long",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -1249,8 +1256,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.ligne-produit",
-                        "module.block-edito-long"
+                        "module.block-edito-long",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -1279,6 +1286,9 @@
                     },
                     "iframe_url": {
                       "type": "string"
+                    },
+                    "iframe_page": {
+                      "type": "string"
                     }
                   },
                   "required": [
@@ -1295,8 +1305,8 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "module.ligne-produit",
-                        "module.block-edito-long"
+                        "module.block-edito-long",
+                        "module.ligne-produit"
                       ]
                     },
                     "id": {
@@ -1361,7 +1371,7 @@
                         "module.paragraphe",
                         "module.duo",
                         "media.video",
-                        "edito.edito-court",
+                        "module.block-edito-long",
                         "module.ligne-produit"
                       ]
                     },
@@ -1414,6 +1424,10 @@
             "items": {
               "type": "string"
             }
+          },
+          "isHeadline": {
+            "type": "boolean",
+            "default": false
           },
           "published_at": {
             "type": "string",

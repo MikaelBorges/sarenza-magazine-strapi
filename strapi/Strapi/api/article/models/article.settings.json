@@ -38,8 +38,8 @@
         "module.paragraphe",
         "module.duo",
         "media.video",
-        "module.ligne-produit",
-        "module.block-edito-long"
+        "module.block-edito-long",
+        "module.ligne-produit"
       ]
     },
     "rubriques": {
@@ -51,6 +51,10 @@
       "collection": "tag",
       "via": "articles",
       "dominant": true
+    },
+    "isHeadline": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
