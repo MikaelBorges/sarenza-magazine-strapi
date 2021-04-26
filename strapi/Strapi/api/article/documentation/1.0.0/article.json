@@ -1107,18 +1107,6 @@
                           "visuelUrl": {
                             "type": "string"
                           },
-                          "QuestionsReponses": {
-                            "Question": {
-                                "type": "string"
-                              },
-                              "Background": {
-                                "type": "string"
-                              },
-                              "Reponse": {
-                                "type": "string"
-                              }
-                          },  
-                          "maxItems": 3,
                           "brand": {
                             "type": "string"
                           },
@@ -1136,6 +1124,59 @@
                           }
                         }
                       }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "media.image",
+                        "module.slider-article",
+                        "module.paragraphe",
+                        "module.duo",
+                        "media.video",
+                        "module.block-edito-long",
+                        "module.ligne-produit",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr",
+                        "module.produit-edito"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Title": {
+                      "type": "string"
+                    },
+                    "QuestionsReponses": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "Question": {
+                            "type": "string"
+                          },
+                          "Background": {
+                            "type": "string"
+                          },
+                          "Reponse": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "maxItems": 3
                     }
                   },
                   "required": [
@@ -1842,19 +1883,59 @@
                           }
                         }
                       }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "media.image",
+                        "module.slider-article",
+                        "module.paragraphe",
+                        "module.duo",
+                        "media.video",
+                        "module.block-edito-long",
+                        "module.ligne-produit",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Title": {
+                      "type": "string"
                     },
                     "QuestionsReponses": {
-                      "Question": {
-                          "type": "string"
-                        },
-                        "Background": {
-                          "type": "string"
-                        },
-                        "Reponse": {
-                          "type": "string"
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "Question": {
+                            "type": "string"
+                          },
+                          "Background": {
+                            "type": "string"
+                          },
+                          "Reponse": {
+                            "type": "string"
+                          }
                         }
                       },
-                    "maxItems": 3
+                      "maxItems": 3
+                    }
                   },
                   "required": [
                     "id"
