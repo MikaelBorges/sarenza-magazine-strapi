@@ -17,6 +17,23 @@ services:
         - strapidb:/var/lib/postgresql/data
     networks:
       - strapi
+  strapi:
+    container_name: strapi
+    image: srzlab.azurecr.io/strapi:${VERSION:-latest}
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
+    build:
+      context: ./strapi
+      dockerfile: Dockerfile.strapi
+    environment:
+      - DATABASE_HOST=strapidb
+      - NODE_ENV=development
+      - DATABASE_PORT=5432
+    ports:
+      - 3337:9337
+    networks:
+      - strapi
   # strapi:
   #   container_name: strapi
   #   image: srzlab.azurecr.io/strapi:1.0.0

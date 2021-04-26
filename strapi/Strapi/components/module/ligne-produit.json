@@ -1,15 +1,17 @@
 {
   "collectionName": "components_module_ligne_produits",
   "info": {
-    "name": "Ligne Produit",
-    "icon": "arrow-alt-circle-right"
+    "name": "Ligne produit",
+    "icon": "address-card",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "ProductCard": {
       "type": "component",
       "repeatable": true,
-      "component": "module.product-card"
+      "component": "module.product-card",
+      "max": 12
     }
   }
 }

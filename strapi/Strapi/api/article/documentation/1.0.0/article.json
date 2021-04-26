@@ -556,6 +556,9 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr",
                         "module.produit-edito"
                       ]
                     },
@@ -589,6 +592,9 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr",
                         "module.produit-edito"
                       ]
                     },
@@ -667,6 +673,9 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr",
                         "module.produit-edito"
                       ]
                     },
@@ -702,6 +711,9 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr",
                         "module.produit-edito"
                       ]
                     },
@@ -769,6 +781,9 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr",
                         "module.produit-edito"
                       ]
                     },
@@ -798,6 +813,9 @@
                     },
                     "iframe_url": {
                       "type": "string"
+                    },
+                    "iframe_page": {
+                      "type": "string"
                     }
                   },
                   "required": [
@@ -816,6 +834,9 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr",
                         "module.produit-edito"
                       ]
                     },
@@ -883,6 +904,9 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr",
                         "module.produit-edito"
                       ]
                     },
@@ -913,6 +937,59 @@
                             "type": "string"
                           }
                         }
+                      },
+                      "maxItems": 12
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "media.image",
+                        "module.slider-article",
+                        "module.paragraphe",
+                        "module.duo",
+                        "media.video",
+                        "module.block-edito-long",
+                        "module.ligne-produit",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Title": {
+                      "type": "string"
+                    },
+                    "Text": {
+                      "type": "string"
+                    },
+                    "Image": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "url"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "alt": {
+                          "type": "string"
+                        },
+                        "url_mobile": {
+                          "type": "string"
+                        }
                       }
                     }
                   },
@@ -932,6 +1009,61 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Text": {
+                      "type": "string"
+                    },
+                    "BackgroundColor": {
+                      "type": "string"
+                    },
+                    "Picture": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "url"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "alt": {
+                          "type": "string"
+                        },
+                        "url_mobile": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "media.image",
+                        "module.slider-article",
+                        "module.paragraphe",
+                        "module.duo",
+                        "media.video",
+                        "module.block-edito-long",
+                        "module.ligne-produit",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr",
                         "module.produit-edito"
                       ]
                     },
@@ -975,6 +1107,18 @@
                           "visuelUrl": {
                             "type": "string"
                           },
+                          "QuestionsReponses": {
+                            "Question": {
+                                "type": "string"
+                              },
+                              "Background": {
+                                "type": "string"
+                              },
+                              "Reponse": {
+                                "type": "string"
+                              }
+                          },  
+                          "maxItems": 3,
                           "brand": {
                             "type": "string"
                           },
@@ -1084,6 +1228,10 @@
               }
             }
           },
+          "isHeadline": {
+            "type": "boolean",
+            "default": false
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -1126,6 +1274,9 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr",
                         "module.produit-edito"
                       ]
                     },
@@ -1159,6 +1310,9 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr",
                         "module.produit-edito"
                       ]
                     },
@@ -1237,6 +1391,9 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr",
                         "module.produit-edito"
                       ]
                     },
@@ -1272,6 +1429,9 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr",
                         "module.produit-edito"
                       ]
                     },
@@ -1339,6 +1499,9 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr",
                         "module.produit-edito"
                       ]
                     },
@@ -1368,6 +1531,9 @@
                     },
                     "iframe_url": {
                       "type": "string"
+                    },
+                    "iframe_page": {
+                      "type": "string"
                     }
                   },
                   "required": [
@@ -1386,6 +1552,9 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr",
                         "module.produit-edito"
                       ]
                     },
@@ -1453,6 +1622,9 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr",
                         "module.produit-edito"
                       ]
                     },
@@ -1483,6 +1655,59 @@
                             "type": "string"
                           }
                         }
+                      },
+                      "maxItems": 12
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "media.image",
+                        "module.slider-article",
+                        "module.paragraphe",
+                        "module.duo",
+                        "media.video",
+                        "module.block-edito-long",
+                        "module.ligne-produit",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Title": {
+                      "type": "string"
+                    },
+                    "Text": {
+                      "type": "string"
+                    },
+                    "Image": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "url"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "alt": {
+                          "type": "string"
+                        },
+                        "url_mobile": {
+                          "type": "string"
+                        }
                       }
                     }
                   },
@@ -1502,6 +1727,61 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Text": {
+                      "type": "string"
+                    },
+                    "BackgroundColor": {
+                      "type": "string"
+                    },
+                    "Picture": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "url"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "alt": {
+                          "type": "string"
+                        },
+                        "url_mobile": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "media.image",
+                        "module.slider-article",
+                        "module.paragraphe",
+                        "module.duo",
+                        "media.video",
+                        "module.block-edito-long",
+                        "module.ligne-produit",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr",
                         "module.produit-edito"
                       ]
                     },
@@ -1562,7 +1842,19 @@
                           }
                         }
                       }
-                    }
+                    },
+                    "QuestionsReponses": {
+                      "Question": {
+                          "type": "string"
+                        },
+                        "Background": {
+                          "type": "string"
+                        },
+                        "Reponse": {
+                          "type": "string"
+                        }
+                      },
+                    "maxItems": 3
                   },
                   "required": [
                     "id"
@@ -1582,6 +1874,10 @@
             "items": {
               "type": "string"
             }
+          },
+          "isHeadline": {
+            "type": "boolean",
+            "default": false
           },
           "published_at": {
             "type": "string",
