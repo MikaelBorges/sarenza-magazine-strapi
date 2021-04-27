@@ -7432,6 +7432,7 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.produit-edito",
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr"
@@ -7467,6 +7468,7 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.produit-edito",
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr"
@@ -7547,6 +7549,7 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.produit-edito",
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr"
@@ -7584,6 +7587,7 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.produit-edito",
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr"
@@ -7653,6 +7657,7 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.produit-edito",
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr"
@@ -7705,6 +7710,7 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.produit-edito",
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr"
@@ -7774,6 +7780,7 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.produit-edito",
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr"
@@ -7878,6 +7885,7 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.produit-edito",
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr"
@@ -7912,7 +7920,38 @@
                           "type": "string"
                         }
                       }
-                    }
+                    },
+                    "CTA": {
+                      "type": "object",
+                      "required": [
+                        "id"],
+		                   "label": {
+                          "type": "string"
+                        },
+                        "link": {
+                          "type": "string"
+                        }
+                      },
+                    "Vignette": {
+                         "visuelUrl": {
+                            "type": "string"
+                          },
+                          "brand": {
+                            "type": "string"
+                          },
+                          "model": {
+                            "type": "string"
+                          },
+                          "url": {
+                            "type": "string"
+                          },
+                          "statusLabel": {
+                            "type": "string"
+                          },
+                          "pcid": {
+                            "type": "integer"
+                          }
+                      }
                   },
                   "required": [
                     "id"
@@ -8102,6 +8141,7 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.produit-edito",
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr"
@@ -8137,6 +8177,7 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.produit-edito",
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr"
@@ -8217,6 +8258,7 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.produit-edito",
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr"
@@ -8254,6 +8296,7 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.produit-edito",
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr"
@@ -8323,6 +8366,7 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.produit-edito",
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr"
@@ -8375,6 +8419,7 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.produit-edito",
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr"
@@ -8444,6 +8489,7 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.produit-edito",
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr"
@@ -8548,6 +8594,7 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.produit-edito",
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr"
@@ -8634,6 +8681,38 @@
                         }
                       },
                       "maxItems": 3
+                    },
+                  "CTA": {
+                    "type": "object",
+                    "required": [
+                      "id"
+                      ],
+                      "label": {
+                        "type": "string"
+                      },
+                    "link": {
+                        "type": "string"
+                      }
+                  },
+                  "Vignette": {
+                        "visuelUrl": {
+                          "type": "string"
+                        },
+                        "brand": {
+                          "type": "string"
+                        },
+                        "model": {
+                          "type": "string"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "statusLabel": {
+                          "type": "string"
+                        },
+                        "pcid": {
+                          "type": "integer"
+                        }
                     }
                   },
                   "required": [

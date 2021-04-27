@@ -558,7 +558,8 @@
                         "module.ligne-produit",
                         "module.duo-qr",
                         "module.identity-card",
-                        "module.trio-qr"
+                        "module.trio-qr",
+                        "module.produit-edito"
                       ]
                     },
                     "id": {
@@ -593,7 +594,8 @@
                         "module.ligne-produit",
                         "module.duo-qr",
                         "module.identity-card",
-                        "module.trio-qr"
+                        "module.trio-qr",
+                        "module.produit-edito"
                       ]
                     },
                     "id": {
@@ -673,7 +675,8 @@
                         "module.ligne-produit",
                         "module.duo-qr",
                         "module.identity-card",
-                        "module.trio-qr"
+                        "module.trio-qr",
+                        "module.produit-edito"
                       ]
                     },
                     "id": {
@@ -710,7 +713,8 @@
                         "module.ligne-produit",
                         "module.duo-qr",
                         "module.identity-card",
-                        "module.trio-qr"
+                        "module.trio-qr",
+                        "module.produit-edito"
                       ]
                     },
                     "id": {
@@ -779,7 +783,8 @@
                         "module.ligne-produit",
                         "module.duo-qr",
                         "module.identity-card",
-                        "module.trio-qr"
+                        "module.trio-qr",
+                        "module.produit-edito"
                       ]
                     },
                     "id": {
@@ -831,7 +836,8 @@
                         "module.ligne-produit",
                         "module.duo-qr",
                         "module.identity-card",
-                        "module.trio-qr"
+                        "module.trio-qr",
+                        "module.produit-edito"
                       ]
                     },
                     "id": {
@@ -900,7 +906,8 @@
                         "module.ligne-produit",
                         "module.duo-qr",
                         "module.identity-card",
-                        "module.trio-qr"
+                        "module.trio-qr",
+                        "module.produit-edito"
                       ]
                     },
                     "id": {
@@ -1056,7 +1063,89 @@
                         "module.ligne-produit",
                         "module.duo-qr",
                         "module.identity-card",
-                        "module.trio-qr"
+                        "module.trio-qr",
+                        "module.produit-edito"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Title": {
+                      "type": "string"
+                    },
+                    "Text": {
+                      "type": "string"
+                    },
+                    "CTA": {
+                      "type": "object",
+                      "required": [
+                        "id"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "label": {
+                          "type": "string"
+                        },
+                        "link": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "Vignette": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "visuelUrl": {
+                            "type": "string"
+                          },
+                          "brand": {
+                            "type": "string"
+                          },
+                          "model": {
+                            "type": "string"
+                          },
+                          "url": {
+                            "type": "string"
+                          },
+                          "statusLabel": {
+                            "type": "string"
+                          },
+                          "pcid": {
+                            "type": "integer"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "media.image",
+                        "module.slider-article",
+                        "module.paragraphe",
+                        "module.duo",
+                        "media.video",
+                        "module.block-edito-long",
+                        "module.ligne-produit",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr",
+                        "module.produit-edito"
                       ]
                     },
                     "id": {
@@ -1228,7 +1317,8 @@
                         "module.ligne-produit",
                         "module.duo-qr",
                         "module.identity-card",
-                        "module.trio-qr"
+                        "module.trio-qr",
+                        "module.produit-edito"
                       ]
                     },
                     "id": {
@@ -1263,7 +1353,8 @@
                         "module.ligne-produit",
                         "module.duo-qr",
                         "module.identity-card",
-                        "module.trio-qr"
+                        "module.trio-qr",
+                        "module.produit-edito"
                       ]
                     },
                     "id": {
@@ -1343,7 +1434,8 @@
                         "module.ligne-produit",
                         "module.duo-qr",
                         "module.identity-card",
-                        "module.trio-qr"
+                        "module.trio-qr",
+                        "module.produit-edito"
                       ]
                     },
                     "id": {
@@ -1380,7 +1472,8 @@
                         "module.ligne-produit",
                         "module.duo-qr",
                         "module.identity-card",
-                        "module.trio-qr"
+                        "module.trio-qr",
+                        "module.produit-edito"
                       ]
                     },
                     "id": {
@@ -1449,7 +1542,8 @@
                         "module.ligne-produit",
                         "module.duo-qr",
                         "module.identity-card",
-                        "module.trio-qr"
+                        "module.trio-qr",
+                        "module.produit-edito"
                       ]
                     },
                     "id": {
@@ -1501,7 +1595,8 @@
                         "module.ligne-produit",
                         "module.duo-qr",
                         "module.identity-card",
-                        "module.trio-qr"
+                        "module.trio-qr",
+                        "module.produit-edito"
                       ]
                     },
                     "id": {
@@ -1570,7 +1665,8 @@
                         "module.ligne-produit",
                         "module.duo-qr",
                         "module.identity-card",
-                        "module.trio-qr"
+                        "module.trio-qr",
+                        "module.produit-edito"
                       ]
                     },
                     "id": {
@@ -1704,6 +1800,87 @@
                         },
                         "url_mobile": {
                           "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "media.image",
+                        "module.slider-article",
+                        "module.paragraphe",
+                        "module.duo",
+                        "media.video",
+                        "module.block-edito-long",
+                        "module.ligne-produit",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr",
+                        "module.produit-edito"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Title": {
+                      "type": "string"
+                    },
+                    "Text": {
+                      "type": "string"
+                    },
+                    "CTA": {
+                      "type": "object",
+                      "required": [
+                        "id"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "label": {
+                          "type": "string"
+                        },
+                        "link": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "Vignette": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "visuelUrl": {
+                            "type": "string"
+                          },
+                          "brand": {
+                            "type": "string"
+                          },
+                          "model": {
+                            "type": "string"
+                          },
+                          "url": {
+                            "type": "string"
+                          },
+                          "statusLabel": {
+                            "type": "string"
+                          },
+                          "pcid": {
+                            "type": "integer"
+                          }
                         }
                       }
                     }
