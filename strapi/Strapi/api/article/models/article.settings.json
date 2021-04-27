@@ -43,7 +43,8 @@
         "module.produit-edito",
         "module.duo-qr",
         "module.identity-card",
-        "module.trio-qr"
+        "module.trio-qr",
+        "module.product-look"
       ]
     },
     "rubriques": {
