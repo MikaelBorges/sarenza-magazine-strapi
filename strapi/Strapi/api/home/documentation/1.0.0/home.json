@@ -453,6 +453,9 @@
                   "type": "string"
                 }
               },
+              "isHeadline": {
+                "type": "boolean"
+              },
               "published_at": {
                 "type": "string"
               },

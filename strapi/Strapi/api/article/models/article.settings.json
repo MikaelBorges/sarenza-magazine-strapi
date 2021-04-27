@@ -40,6 +40,10 @@
         "media.video",
         "module.block-edito-long",
         "module.ligne-produit",
+        "module.produit-edito",
+        "module.duo-qr",
+        "module.identity-card",
+        "module.trio-qr",
         "module.product-look"
       ]
     },
@@ -52,6 +56,10 @@
       "collection": "tag",
       "via": "articles",
       "dominant": true
+    },
+    "isHeadline": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

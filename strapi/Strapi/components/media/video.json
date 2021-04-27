@@ -14,6 +14,9 @@
     },
     "iframe_url": {
       "type": "string"
+    },
+    "iframe_page": {
+      "type": "string"
     }
   }
 }

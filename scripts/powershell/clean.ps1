@@ -5,6 +5,7 @@
 # docker rmi $(docker images -a -q)
 # docker rmi -f 166f4ad24848
 
+[Environment]::SetEnvironmentVariable("[variable name]",$null,"User")
 
 # docker volume rm -f 0b53c709f7f349967d0a61eb2b58b35405cb40cd2ed041f5fba23a4d0b469f59
 
