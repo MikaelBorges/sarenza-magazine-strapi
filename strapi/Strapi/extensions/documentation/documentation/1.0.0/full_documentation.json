@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "04/23/2021 5:32:04 PM"
+    "x-generation-date": "04/28/2021 3:29:09 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -7436,7 +7436,8 @@
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr",
-                        "module.product-look"
+                        "module.product-look",
+                        "module.images-legend"
                       ]
                     },
                     "id": {
@@ -7473,7 +7474,8 @@
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr",
-                        "module.product-look"
+                        "module.product-look",
+                        "module.images-legend"
                       ]
                     },
                     "id": {
@@ -7555,7 +7557,8 @@
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr",
-                        "module.product-look"
+                        "module.product-look",
+                        "module.images-legend"
                       ]
                     },
                     "id": {
@@ -7594,7 +7597,8 @@
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr",
-                        "module.product-look"
+                        "module.product-look",
+                        "module.images-legend"
                       ]
                     },
                     "id": {
@@ -7665,7 +7669,8 @@
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr",
-                        "module.product-look"
+                        "module.product-look",
+                        "module.images-legend"
                       ]
                     },
                     "id": {
@@ -7719,7 +7724,8 @@
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr",
-                        "module.product-look"
+                        "module.product-look",
+                        "module.images-legend"
                       ]
                     },
                     "id": {
@@ -7790,7 +7796,8 @@
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr",
-                        "module.product-look"
+                        "module.product-look",
+                        "module.images-legend"
                       ]
                     },
                     "id": {
@@ -7844,7 +7851,91 @@
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr",
-                        "module.product-look"
+                        "module.product-look",
+                        "module.images-legend"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Title": {
+                      "type": "string"
+                    },
+                    "Text": {
+                      "type": "string"
+                    },
+                    "CTA": {
+                      "type": "object",
+                      "required": [
+                        "id"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "label": {
+                          "type": "string"
+                        },
+                        "link": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "Vignette": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "visuelUrl": {
+                            "type": "string"
+                          },
+                          "brand": {
+                            "type": "string"
+                          },
+                          "model": {
+                            "type": "string"
+                          },
+                          "url": {
+                            "type": "string"
+                          },
+                          "statusLabel": {
+                            "type": "string"
+                          },
+                          "pcid": {
+                            "type": "integer"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "media.image",
+                        "module.slider-article",
+                        "module.paragraphe",
+                        "module.duo",
+                        "media.video",
+                        "module.block-edito-long",
+                        "module.ligne-produit",
+                        "module.produit-edito",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr",
+                        "module.product-look",
+                        "module.images-legend"
                       ]
                     },
                     "id": {
@@ -7898,7 +7989,8 @@
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr",
-                        "module.product-look"
+                        "module.product-look",
+                        "module.images-legend"
                       ]
                     },
                     "id": {
@@ -7930,38 +8022,7 @@
                           "type": "string"
                         }
                       }
-                    },
-                    "CTA": {
-                      "type": "object",
-                      "required": [
-                        "id"],
-		                   "label": {
-                          "type": "string"
-                        },
-                        "link": {
-                          "type": "string"
-                        }
-                      },
-                    "Vignette": {
-                         "visuelUrl": {
-                            "type": "string"
-                          },
-                          "brand": {
-                            "type": "string"
-                          },
-                          "model": {
-                            "type": "string"
-                          },
-                          "url": {
-                            "type": "string"
-                          },
-                          "statusLabel": {
-                            "type": "string"
-                          },
-                          "pcid": {
-                            "type": "integer"
-                          }
-                      }
+                    }
                   },
                   "required": [
                     "id"
@@ -7983,7 +8044,8 @@
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr",
-                        "module.product-look"
+                        "module.product-look",
+                        "module.images-legend"
                       ]
                     },
                     "id": {
@@ -8037,7 +8099,8 @@
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr",
-                        "module.product-look"
+                        "module.product-look",
+                        "module.images-legend"
                       ]
                     },
                     "id": {
@@ -8115,6 +8178,131 @@
                           "type": "string"
                         },
                         "url_mobile": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "media.image",
+                        "module.slider-article",
+                        "module.paragraphe",
+                        "module.duo",
+                        "media.video",
+                        "module.block-edito-long",
+                        "module.ligne-produit",
+                        "module.produit-edito",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr",
+                        "module.product-look",
+                        "module.images-legend"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Title": {
+                      "type": "string"
+                    },
+                    "Text": {
+                      "type": "string"
+                    },
+                    "VerticalImage": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "url"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "alt": {
+                          "type": "string"
+                        },
+                        "url_mobile": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "ImageText": {
+                      "type": "object",
+                      "required": [
+                        "id"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "url_mobile": {
+                          "type": "string"
+                        },
+                        "alt": {
+                          "type": "string"
+                        },
+                        "Subtitle": {
+                          "type": "string"
+                        },
+                        "Title": {
+                          "type": "string"
+                        },
+                        "Paragraph": {
+                          "type": "string"
+                        },
+                        "Link": {
+                          "type": "string"
+                        },
+                        "Label": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "ImageTextOptional": {
+                      "type": "object",
+                      "required": [
+                        "id"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "url_mobile": {
+                          "type": "string"
+                        },
+                        "alt": {
+                          "type": "string"
+                        },
+                        "Subtitle": {
+                          "type": "string"
+                        },
+                        "Title": {
+                          "type": "string"
+                        },
+                        "Paragraph": {
+                          "type": "string"
+                        },
+                        "Link": {
+                          "type": "string"
+                        },
+                        "Label": {
                           "type": "string"
                         }
                       }
@@ -8260,7 +8448,8 @@
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr",
-                        "module.product-look"
+                        "module.product-look",
+                        "module.images-legend"
                       ]
                     },
                     "id": {
@@ -8297,7 +8486,8 @@
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr",
-                        "module.product-look"
+                        "module.product-look",
+                        "module.images-legend"
                       ]
                     },
                     "id": {
@@ -8379,7 +8569,8 @@
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr",
-                        "module.product-look"
+                        "module.product-look",
+                        "module.images-legend"
                       ]
                     },
                     "id": {
@@ -8418,7 +8609,8 @@
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr",
-                        "module.product-look"
+                        "module.product-look",
+                        "module.images-legend"
                       ]
                     },
                     "id": {
@@ -8489,7 +8681,8 @@
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr",
-                        "module.product-look"
+                        "module.product-look",
+                        "module.images-legend"
                       ]
                     },
                     "id": {
@@ -8543,7 +8736,8 @@
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr",
-                        "module.product-look"
+                        "module.product-look",
+                        "module.images-legend"
                       ]
                     },
                     "id": {
@@ -8614,7 +8808,8 @@
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr",
-                        "module.product-look"
+                        "module.product-look",
+                        "module.images-legend"
                       ]
                     },
                     "id": {
@@ -8668,7 +8863,91 @@
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr",
-                        "module.product-look"
+                        "module.product-look",
+                        "module.images-legend"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Title": {
+                      "type": "string"
+                    },
+                    "Text": {
+                      "type": "string"
+                    },
+                    "CTA": {
+                      "type": "object",
+                      "required": [
+                        "id"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "label": {
+                          "type": "string"
+                        },
+                        "link": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "Vignette": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "visuelUrl": {
+                            "type": "string"
+                          },
+                          "brand": {
+                            "type": "string"
+                          },
+                          "model": {
+                            "type": "string"
+                          },
+                          "url": {
+                            "type": "string"
+                          },
+                          "statusLabel": {
+                            "type": "string"
+                          },
+                          "pcid": {
+                            "type": "integer"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "media.image",
+                        "module.slider-article",
+                        "module.paragraphe",
+                        "module.duo",
+                        "media.video",
+                        "module.block-edito-long",
+                        "module.ligne-produit",
+                        "module.produit-edito",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr",
+                        "module.product-look",
+                        "module.images-legend"
                       ]
                     },
                     "id": {
@@ -8722,7 +9001,8 @@
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr",
-                        "module.product-look"
+                        "module.product-look",
+                        "module.images-legend"
                       ]
                     },
                     "id": {
@@ -8772,11 +9052,67 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.produit-edito",
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr",
+                        "module.product-look",
+                        "module.images-legend"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Title": {
+                      "type": "string"
+                    },
+                    "QuestionsReponses": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "Question": {
+                            "type": "string"
+                          },
+                          "Background": {
+                            "type": "string"
+                          },
+                          "Reponse": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "maxItems": 3
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "media.image",
+                        "module.slider-article",
+                        "module.paragraphe",
+                        "module.duo",
+                        "media.video",
+                        "module.block-edito-long",
+                        "module.ligne-produit",
                         "module.produit-edito",
-                        "module.product-look"
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr",
+                        "module.product-look",
+                        "module.images-legend"
                       ]
                     },
                     "id": {
@@ -8875,11 +9211,12 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.produit-edito",
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr",
-                        "module.produit-edito",
-                        "module.product-look"
+                        "module.product-look",
+                        "module.images-legend"
                       ]
                     },
                     "id": {
@@ -8888,29 +9225,99 @@
                     "Title": {
                       "type": "string"
                     },
-                    "QuestionsReponses": {
-                      "type": "array",
-                      "items": {
-                        "type": "object",
-                        "required": [
-                          "id"
-                        ],
-                        "properties": {
-                          "id": {
-                            "type": "string"
-                          },
-                          "Question": {
-                            "type": "string"
-                          },
-                          "Background": {
-                            "type": "string"
-                          },
-                          "Reponse": {
-                            "type": "string"
-                          }
+                    "Text": {
+                      "type": "string"
+                    },
+                    "VerticalImage": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "url"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "alt": {
+                          "type": "string"
+                        },
+                        "url_mobile": {
+                          "type": "string"
                         }
-                      },
-                      "maxItems": 3
+                      }
+                    },
+                    "ImageText": {
+                      "type": "object",
+                      "required": [
+                        "id"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "url_mobile": {
+                          "type": "string"
+                        },
+                        "alt": {
+                          "type": "string"
+                        },
+                        "Subtitle": {
+                          "type": "string"
+                        },
+                        "Title": {
+                          "type": "string"
+                        },
+                        "Paragraph": {
+                          "type": "string"
+                        },
+                        "Link": {
+                          "type": "string"
+                        },
+                        "Label": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "ImageTextOptional": {
+                      "type": "object",
+                      "required": [
+                        "id"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "url_mobile": {
+                          "type": "string"
+                        },
+                        "alt": {
+                          "type": "string"
+                        },
+                        "Subtitle": {
+                          "type": "string"
+                        },
+                        "Title": {
+                          "type": "string"
+                        },
+                        "Paragraph": {
+                          "type": "string"
+                        },
+                        "Link": {
+                          "type": "string"
+                        },
+                        "Label": {
+                          "type": "string"
+                        }
+                      }
                     }
                   },
                   "required": [
