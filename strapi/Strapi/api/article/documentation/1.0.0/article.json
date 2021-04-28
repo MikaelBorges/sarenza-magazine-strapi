@@ -556,11 +556,12 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.produit-edito",
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr",
-                        "module.produit-edito",
-                        "module.product-look"
+                        "module.product-look",
+                        "module.images-legend"
                       ]
                     },
                     "id": {
@@ -593,11 +594,12 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.produit-edito",
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr",
-                        "module.produit-edito",
-                        "module.product-look"
+                        "module.product-look",
+                        "module.images-legend"
                       ]
                     },
                     "id": {
@@ -675,11 +677,12 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.produit-edito",
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr",
-                        "module.produit-edito",
-                        "module.product-look"
+                        "module.product-look",
+                        "module.images-legend"
                       ]
                     },
                     "id": {
@@ -714,11 +717,12 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.produit-edito",
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr",
-                        "module.produit-edito",
-                        "module.product-look"
+                        "module.product-look",
+                        "module.images-legend"
                       ]
                     },
                     "id": {
@@ -785,11 +789,12 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.produit-edito",
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr",
-                        "module.produit-edito",
-                        "module.product-look"
+                        "module.product-look",
+                        "module.images-legend"
                       ]
                     },
                     "id": {
@@ -839,11 +844,12 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.produit-edito",
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr",
-                        "module.produit-edito",
-                        "module.product-look"
+                        "module.product-look",
+                        "module.images-legend"
                       ]
                     },
                     "id": {
@@ -910,11 +916,12 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.produit-edito",
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr",
-                        "module.produit-edito",
-                        "module.product-look"
+                        "module.product-look",
+                        "module.images-legend"
                       ]
                     },
                     "id": {
@@ -964,119 +971,12 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.produit-edito",
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr",
-                        "module.produit-edito",
-                        "module.product-look"
-                      ]
-                    },
-                    "id": {
-                      "type": "string"
-                    },
-                    "Title": {
-                      "type": "string"
-                    },
-                    "Text": {
-                      "type": "string"
-                    },
-                    "Image": {
-                      "type": "object",
-                      "required": [
-                        "id",
-                        "url"
-                      ],
-                      "properties": {
-                        "id": {
-                          "type": "string"
-                        },
-                        "url": {
-                          "type": "string"
-                        },
-                        "alt": {
-                          "type": "string"
-                        },
-                        "url_mobile": {
-                          "type": "string"
-                        }
-                      }
-                    }
-                  },
-                  "required": [
-                    "id"
-                  ]
-                },
-                {
-                  "properties": {
-                    "__component": {
-                      "type": "string",
-                      "enum": [
-                        "media.image",
-                        "module.slider-article",
-                        "module.paragraphe",
-                        "module.duo",
-                        "media.video",
-                        "module.block-edito-long",
-                        "module.ligne-produit",
-                        "module.duo-qr",
-                        "module.identity-card",
-                        "module.trio-qr",
-                        "module.produit-edito",
-                        "module.product-look"
-                      ]
-                    },
-                    "id": {
-                      "type": "string"
-                    },
-                    "Text": {
-                      "type": "string"
-                    },
-                    "BackgroundColor": {
-                      "type": "string"
-                    },
-                    "Picture": {
-                      "type": "object",
-                      "required": [
-                        "id",
-                        "url"
-                      ],
-                      "properties": {
-                        "id": {
-                          "type": "string"
-                        },
-                        "url": {
-                          "type": "string"
-                        },
-                        "alt": {
-                          "type": "string"
-                        },
-                        "url_mobile": {
-                          "type": "string"
-                        }
-                      }
-                    }
-                  },
-                  "required": [
-                    "id"
-                  ]
-                },
-                {
-                  "properties": {
-                    "__component": {
-                      "type": "string",
-                      "enum": [
-                        "media.image",
-                        "module.slider-article",
-                        "module.paragraphe",
-                        "module.duo",
-                        "media.video",
-                        "module.block-edito-long",
-                        "module.ligne-produit",
-                        "module.duo-qr",
-                        "module.identity-card",
-                        "module.trio-qr",
-                        "module.produit-edito",
-                        "module.product-look"
+                        "module.product-look",
+                        "module.images-legend"
                       ]
                     },
                     "id": {
@@ -1154,11 +1054,177 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.produit-edito",
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr",
+                        "module.product-look",
+                        "module.images-legend"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Title": {
+                      "type": "string"
+                    },
+                    "Text": {
+                      "type": "string"
+                    },
+                    "Image": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "url"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "alt": {
+                          "type": "string"
+                        },
+                        "url_mobile": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "media.image",
+                        "module.slider-article",
+                        "module.paragraphe",
+                        "module.duo",
+                        "media.video",
+                        "module.block-edito-long",
+                        "module.ligne-produit",
                         "module.produit-edito",
-                        "module.product-look"
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr",
+                        "module.product-look",
+                        "module.images-legend"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Text": {
+                      "type": "string"
+                    },
+                    "BackgroundColor": {
+                      "type": "string"
+                    },
+                    "Picture": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "url"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "alt": {
+                          "type": "string"
+                        },
+                        "url_mobile": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "media.image",
+                        "module.slider-article",
+                        "module.paragraphe",
+                        "module.duo",
+                        "media.video",
+                        "module.block-edito-long",
+                        "module.ligne-produit",
+                        "module.produit-edito",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr",
+                        "module.product-look",
+                        "module.images-legend"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Title": {
+                      "type": "string"
+                    },
+                    "QuestionsReponses": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "Question": {
+                            "type": "string"
+                          },
+                          "Background": {
+                            "type": "string"
+                          },
+                          "Reponse": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "maxItems": 3
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "media.image",
+                        "module.slider-article",
+                        "module.paragraphe",
+                        "module.duo",
+                        "media.video",
+                        "module.block-edito-long",
+                        "module.ligne-produit",
+                        "module.produit-edito",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr",
+                        "module.product-look",
+                        "module.images-legend"
                       ]
                     },
                     "id": {
@@ -1257,11 +1323,12 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.produit-edito",
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr",
-                        "module.produit-edito",
-                        "module.product-look"
+                        "module.product-look",
+                        "module.images-legend"
                       ]
                     },
                     "id": {
@@ -1270,29 +1337,99 @@
                     "Title": {
                       "type": "string"
                     },
-                    "QuestionsReponses": {
-                      "type": "array",
-                      "items": {
-                        "type": "object",
-                        "required": [
-                          "id"
-                        ],
-                        "properties": {
-                          "id": {
-                            "type": "string"
-                          },
-                          "Question": {
-                            "type": "string"
-                          },
-                          "Background": {
-                            "type": "string"
-                          },
-                          "Reponse": {
-                            "type": "string"
-                          }
+                    "Text": {
+                      "type": "string"
+                    },
+                    "VerticalImage": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "url"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "alt": {
+                          "type": "string"
+                        },
+                        "url_mobile": {
+                          "type": "string"
                         }
-                      },
-                      "maxItems": 3
+                      }
+                    },
+                    "ImageText": {
+                      "type": "object",
+                      "required": [
+                        "id"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "url_mobile": {
+                          "type": "string"
+                        },
+                        "alt": {
+                          "type": "string"
+                        },
+                        "Subtitle": {
+                          "type": "string"
+                        },
+                        "Title": {
+                          "type": "string"
+                        },
+                        "Paragraph": {
+                          "type": "string"
+                        },
+                        "Link": {
+                          "type": "string"
+                        },
+                        "Label": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "ImageTextOptional": {
+                      "type": "object",
+                      "required": [
+                        "id"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "url_mobile": {
+                          "type": "string"
+                        },
+                        "alt": {
+                          "type": "string"
+                        },
+                        "Subtitle": {
+                          "type": "string"
+                        },
+                        "Title": {
+                          "type": "string"
+                        },
+                        "Paragraph": {
+                          "type": "string"
+                        },
+                        "Link": {
+                          "type": "string"
+                        },
+                        "Label": {
+                          "type": "string"
+                        }
+                      }
                     }
                   },
                   "required": [
@@ -1431,11 +1568,12 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.produit-edito",
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr",
-                        "module.produit-edito",
-                        "module.product-look"
+                        "module.product-look",
+                        "module.images-legend"
                       ]
                     },
                     "id": {
@@ -1468,11 +1606,12 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.produit-edito",
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr",
-                        "module.produit-edito",
-                        "module.product-look"
+                        "module.product-look",
+                        "module.images-legend"
                       ]
                     },
                     "id": {
@@ -1550,11 +1689,12 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.produit-edito",
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr",
-                        "module.produit-edito",
-                        "module.product-look"
+                        "module.product-look",
+                        "module.images-legend"
                       ]
                     },
                     "id": {
@@ -1589,11 +1729,12 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.produit-edito",
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr",
-                        "module.produit-edito",
-                        "module.product-look"
+                        "module.product-look",
+                        "module.images-legend"
                       ]
                     },
                     "id": {
@@ -1660,11 +1801,12 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.produit-edito",
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr",
-                        "module.produit-edito",
-                        "module.product-look"
+                        "module.product-look",
+                        "module.images-legend"
                       ]
                     },
                     "id": {
@@ -1714,11 +1856,12 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.produit-edito",
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr",
-                        "module.produit-edito",
-                        "module.product-look"
+                        "module.product-look",
+                        "module.images-legend"
                       ]
                     },
                     "id": {
@@ -1785,11 +1928,12 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.produit-edito",
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr",
-                        "module.produit-edito",
-                        "module.product-look"
+                        "module.product-look",
+                        "module.images-legend"
                       ]
                     },
                     "id": {
@@ -1839,119 +1983,12 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.produit-edito",
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr",
-                        "module.produit-edito",
-                        "module.product-look"
-                      ]
-                    },
-                    "id": {
-                      "type": "string"
-                    },
-                    "Title": {
-                      "type": "string"
-                    },
-                    "Text": {
-                      "type": "string"
-                    },
-                    "Image": {
-                      "type": "object",
-                      "required": [
-                        "id",
-                        "url"
-                      ],
-                      "properties": {
-                        "id": {
-                          "type": "string"
-                        },
-                        "url": {
-                          "type": "string"
-                        },
-                        "alt": {
-                          "type": "string"
-                        },
-                        "url_mobile": {
-                          "type": "string"
-                        }
-                      }
-                    }
-                  },
-                  "required": [
-                    "id"
-                  ]
-                },
-                {
-                  "properties": {
-                    "__component": {
-                      "type": "string",
-                      "enum": [
-                        "media.image",
-                        "module.slider-article",
-                        "module.paragraphe",
-                        "module.duo",
-                        "media.video",
-                        "module.block-edito-long",
-                        "module.ligne-produit",
-                        "module.duo-qr",
-                        "module.identity-card",
-                        "module.trio-qr",
-                        "module.produit-edito",
-                        "module.product-look"
-                      ]
-                    },
-                    "id": {
-                      "type": "string"
-                    },
-                    "Text": {
-                      "type": "string"
-                    },
-                    "BackgroundColor": {
-                      "type": "string"
-                    },
-                    "Picture": {
-                      "type": "object",
-                      "required": [
-                        "id",
-                        "url"
-                      ],
-                      "properties": {
-                        "id": {
-                          "type": "string"
-                        },
-                        "url": {
-                          "type": "string"
-                        },
-                        "alt": {
-                          "type": "string"
-                        },
-                        "url_mobile": {
-                          "type": "string"
-                        }
-                      }
-                    }
-                  },
-                  "required": [
-                    "id"
-                  ]
-                },
-                {
-                  "properties": {
-                    "__component": {
-                      "type": "string",
-                      "enum": [
-                        "media.image",
-                        "module.slider-article",
-                        "module.paragraphe",
-                        "module.duo",
-                        "media.video",
-                        "module.block-edito-long",
-                        "module.ligne-produit",
-                        "module.duo-qr",
-                        "module.identity-card",
-                        "module.trio-qr",
-                        "module.produit-edito",
-                        "module.product-look"
+                        "module.product-look",
+                        "module.images-legend"
                       ]
                     },
                     "id": {
@@ -2029,11 +2066,177 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.produit-edito",
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr",
+                        "module.product-look",
+                        "module.images-legend"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Title": {
+                      "type": "string"
+                    },
+                    "Text": {
+                      "type": "string"
+                    },
+                    "Image": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "url"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "alt": {
+                          "type": "string"
+                        },
+                        "url_mobile": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "media.image",
+                        "module.slider-article",
+                        "module.paragraphe",
+                        "module.duo",
+                        "media.video",
+                        "module.block-edito-long",
+                        "module.ligne-produit",
                         "module.produit-edito",
-                        "module.product-look"
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr",
+                        "module.product-look",
+                        "module.images-legend"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Text": {
+                      "type": "string"
+                    },
+                    "BackgroundColor": {
+                      "type": "string"
+                    },
+                    "Picture": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "url"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "alt": {
+                          "type": "string"
+                        },
+                        "url_mobile": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "media.image",
+                        "module.slider-article",
+                        "module.paragraphe",
+                        "module.duo",
+                        "media.video",
+                        "module.block-edito-long",
+                        "module.ligne-produit",
+                        "module.produit-edito",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr",
+                        "module.product-look",
+                        "module.images-legend"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Title": {
+                      "type": "string"
+                    },
+                    "QuestionsReponses": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "Question": {
+                            "type": "string"
+                          },
+                          "Background": {
+                            "type": "string"
+                          },
+                          "Reponse": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "maxItems": 3
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "media.image",
+                        "module.slider-article",
+                        "module.paragraphe",
+                        "module.duo",
+                        "media.video",
+                        "module.block-edito-long",
+                        "module.ligne-produit",
+                        "module.produit-edito",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr",
+                        "module.product-look",
+                        "module.images-legend"
                       ]
                     },
                     "id": {
@@ -2132,11 +2335,12 @@
                         "media.video",
                         "module.block-edito-long",
                         "module.ligne-produit",
+                        "module.produit-edito",
                         "module.duo-qr",
                         "module.identity-card",
                         "module.trio-qr",
-                        "module.produit-edito",
-                        "module.product-look"
+                        "module.product-look",
+                        "module.images-legend"
                       ]
                     },
                     "id": {
@@ -2145,29 +2349,99 @@
                     "Title": {
                       "type": "string"
                     },
-                    "QuestionsReponses": {
-                      "type": "array",
-                      "items": {
-                        "type": "object",
-                        "required": [
-                          "id"
-                        ],
-                        "properties": {
-                          "id": {
-                            "type": "string"
-                          },
-                          "Question": {
-                            "type": "string"
-                          },
-                          "Background": {
-                            "type": "string"
-                          },
-                          "Reponse": {
-                            "type": "string"
-                          }
+                    "Text": {
+                      "type": "string"
+                    },
+                    "VerticalImage": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "url"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "alt": {
+                          "type": "string"
+                        },
+                        "url_mobile": {
+                          "type": "string"
                         }
-                      },
-                      "maxItems": 3
+                      }
+                    },
+                    "ImageText": {
+                      "type": "object",
+                      "required": [
+                        "id"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "url_mobile": {
+                          "type": "string"
+                        },
+                        "alt": {
+                          "type": "string"
+                        },
+                        "Subtitle": {
+                          "type": "string"
+                        },
+                        "Title": {
+                          "type": "string"
+                        },
+                        "Paragraph": {
+                          "type": "string"
+                        },
+                        "Link": {
+                          "type": "string"
+                        },
+                        "Label": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "ImageTextOptional": {
+                      "type": "object",
+                      "required": [
+                        "id"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "url_mobile": {
+                          "type": "string"
+                        },
+                        "alt": {
+                          "type": "string"
+                        },
+                        "Subtitle": {
+                          "type": "string"
+                        },
+                        "Title": {
+                          "type": "string"
+                        },
+                        "Paragraph": {
+                          "type": "string"
+                        },
+                        "Link": {
+                          "type": "string"
+                        },
+                        "Label": {
+                          "type": "string"
+                        }
+                      }
                     }
                   },
                   "required": [

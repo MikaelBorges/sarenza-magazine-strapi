@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_module_image_texts",
+  "info": {
+    "name": "ImageText",
+    "icon": "bars"
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "string"
+    },
+    "url_mobile": {
+      "type": "string"
+    },
+    "alt": {
+      "type": "string"
+    },
+    "Subtitle": {
+      "type": "string"
+    },
+    "Title": {
+      "type": "string"
+    },
+    "Paragraph": {
+      "type": "text"
+    },
+    "Link": {
+      "type": "string"
+    },
+    "Label": {
+      "type": "string"
+    }
+  }
+}
