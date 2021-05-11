@@ -21,7 +21,9 @@
     "Vignette": {
       "type": "component",
       "repeatable": true,
-      "component": "module.vignette"
+      "component": "module.vignette",
+      "max": 12,
+      "min": 4
     }
   }
 }
