@@ -1035,7 +1035,9 @@
                             "type": "integer"
                           }
                         }
-                      }
+                      },
+                      "minItems": 4,
+                      "maxItems": 12
                     }
                   },
                   "required": [
@@ -2047,7 +2049,9 @@
                             "type": "integer"
                           }
                         }
-                      }
+                      },
+                      "minItems": 4,
+                      "maxItems": 12
                     }
                   },
                   "required": [
