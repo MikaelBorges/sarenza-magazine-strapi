@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_mega_menu_links",
+  "info": {
+    "name": "links",
+    "icon": "anchor"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "labelPicto": {
+      "type": "string"
+    },
+    "colorPicto": {
+      "type": "string"
+    }
+  }
+}
