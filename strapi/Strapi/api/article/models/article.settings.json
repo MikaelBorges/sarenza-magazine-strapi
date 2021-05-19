@@ -39,7 +39,13 @@
         "module.duo",
         "media.video",
         "module.block-edito-long",
-        "module.ligne-produit"
+        "module.ligne-produit",
+        "module.produit-edito",
+        "module.duo-qr",
+        "module.identity-card",
+        "module.trio-qr",
+        "module.product-look",
+        "module.images-legend"
       ]
     },
     "rubriques": {

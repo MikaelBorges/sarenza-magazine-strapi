@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_module_questions_reponses",
+  "info": {
+    "name": "QuestionsReponses",
+    "icon": "question-circle"
+  },
+  "options": {},
+  "attributes": {
+    "Question": {
+      "type": "string"
+    },
+    "Background": {
+      "type": "string"
+    },
+    "Reponse": {
+      "type": "text"
+    }
+  }
+}
