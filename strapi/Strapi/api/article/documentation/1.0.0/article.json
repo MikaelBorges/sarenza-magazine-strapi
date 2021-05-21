@@ -1528,6 +1528,10 @@
             "type": "boolean",
             "default": false
           },
+          "isSeo": {
+            "type": "boolean",
+            "default": false
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -2468,6 +2472,10 @@
             }
           },
           "isHeadline": {
+            "type": "boolean",
+            "default": false
+          },
+          "isSeo": {
             "type": "boolean",
             "default": false
           },

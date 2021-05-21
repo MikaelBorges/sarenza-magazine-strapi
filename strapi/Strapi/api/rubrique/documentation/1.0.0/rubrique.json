@@ -577,6 +577,9 @@
                 "isHeadline": {
                   "type": "boolean"
                 },
+                "isSeo": {
+                  "type": "boolean"
+                },
                 "published_at": {
                   "type": "string"
                 },
