@@ -15,8 +15,8 @@
       "type": "string"
     },
     "menu_items": {
-      "collection": "menu-item",
-      "via": "menu"
+      "via": "menu",
+      "collection": "menu-item"
     },
     "Url": {
       "type": "string"
