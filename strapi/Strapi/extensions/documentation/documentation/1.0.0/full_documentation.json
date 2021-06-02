@@ -8404,6 +8404,10 @@
             "type": "boolean",
             "default": false
           },
+          "isSeo": {
+            "type": "boolean",
+            "default": false
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -9344,6 +9348,10 @@
             }
           },
           "isHeadline": {
+            "type": "boolean",
+            "default": false
+          },
+          "isSeo": {
             "type": "boolean",
             "default": false
           },
@@ -10437,6 +10445,9 @@
               "isHeadline": {
                 "type": "boolean"
               },
+              "isSeo": {
+                "type": "boolean"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -10875,6 +10886,9 @@
                 "isHeadline": {
                   "type": "boolean"
                 },
+                "isSeo": {
+                  "type": "boolean"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -11080,6 +11094,9 @@
                   }
                 },
                 "isHeadline": {
+                  "type": "boolean"
+                },
+                "isSeo": {
                   "type": "boolean"
                 },
                 "published_at": {

@@ -13,6 +13,7 @@ module.exports = {
             if(currentHeadline && currentHeadline.id != data.ArticleUne) strapi.services.article.update({ id: currentHeadline.id }, { isHeadline: false });
             /* Set new headline if necessary */
             if(!currentHeadline || currentHeadline.id != data.ArticleUne) strapi.services.article.update({ id: data.ArticleUne }, { isHeadline: true });
+            
         }   
     }    
 };

@@ -538,26 +538,6 @@
           "category": {
             "type": "string"
           },
-          "links": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "label": {
-                  "type": "string"
-                },
-                "link": {
-                  "type": "string"
-                }
-              }
-            }
-          },
           "menu": {
             "required": [
               "id"
@@ -595,16 +575,11 @@
               }
             }
           },
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
-          }
-        }
-      },
-      "NewMenu-item": {
-        "properties": {
-          "category": {
+          "libelle": {
             "type": "string"
+          },
+          "position": {
+            "type": "integer"
           },
           "links": {
             "type": "array",
@@ -622,12 +597,67 @@
                 },
                 "link": {
                   "type": "string"
+                },
+                "labelPicto": {
+                  "type": "string"
+                },
+                "colorPicto": {
+                  "type": "string"
+                },
+                "boldLink": {
+                  "type": "boolean"
                 }
               }
             }
           },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "NewMenu-item": {
+        "properties": {
+          "category": {
+            "type": "string"
+          },
           "menu": {
             "type": "string"
+          },
+          "libelle": {
+            "type": "string"
+          },
+          "position": {
+            "type": "integer"
+          },
+          "links": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "label": {
+                  "type": "string"
+                },
+                "link": {
+                  "type": "string"
+                },
+                "labelPicto": {
+                  "type": "string"
+                },
+                "colorPicto": {
+                  "type": "string"
+                },
+                "boldLink": {
+                  "type": "boolean"
+                }
+              }
+            }
           },
           "published_at": {
             "type": "string",

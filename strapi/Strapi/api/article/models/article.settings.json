@@ -61,6 +61,10 @@
     "isHeadline": {
       "type": "boolean",
       "default": false
+    },
+    "isSeo": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

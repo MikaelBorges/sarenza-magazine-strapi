@@ -14,14 +14,20 @@
     "category": {
       "type": "string"
     },
+    "menu": {
+      "model": "menu",
+      "via": "menu_items"
+    },
+    "libelle": {
+      "type": "string"
+    },
+    "position": {
+      "type": "integer"
+    },
     "links": {
       "type": "component",
       "repeatable": true,
-      "component": "input.button"
-    },
-    "menu": {
-      "via": "menu_items",
-      "model": "menu"
+      "component": "mega-menu.links"
     }
   }
 }

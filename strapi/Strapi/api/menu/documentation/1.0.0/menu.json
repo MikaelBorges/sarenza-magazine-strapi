@@ -538,11 +538,17 @@
                 "category": {
                   "type": "string"
                 },
-                "links": {
-                  "type": "component"
-                },
                 "menu": {
                   "type": "string"
+                },
+                "libelle": {
+                  "type": "string"
+                },
+                "position": {
+                  "type": "integer"
+                },
+                "links": {
+                  "type": "component"
                 },
                 "published_at": {
                   "type": "string"
