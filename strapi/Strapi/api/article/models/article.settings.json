@@ -45,7 +45,8 @@
         "module.identity-card",
         "module.trio-qr",
         "module.product-look",
-        "module.images-legend"
+        "module.images-legend",
+        "module.duo-image"
       ]
     },
     "rubriques": {
