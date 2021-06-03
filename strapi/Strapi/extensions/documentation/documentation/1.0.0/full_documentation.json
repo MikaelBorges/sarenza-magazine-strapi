@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "05/11/2021 5:57:16 PM"
+    "x-generation-date": "06/03/2021 10:40:19 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -7437,7 +7437,8 @@
                         "module.identity-card",
                         "module.trio-qr",
                         "module.product-look",
-                        "module.images-legend"
+                        "module.images-legend",
+                        "module.duo-image"
                       ]
                     },
                     "id": {
@@ -7475,7 +7476,8 @@
                         "module.identity-card",
                         "module.trio-qr",
                         "module.product-look",
-                        "module.images-legend"
+                        "module.images-legend",
+                        "module.duo-image"
                       ]
                     },
                     "id": {
@@ -7558,7 +7560,8 @@
                         "module.identity-card",
                         "module.trio-qr",
                         "module.product-look",
-                        "module.images-legend"
+                        "module.images-legend",
+                        "module.duo-image"
                       ]
                     },
                     "id": {
@@ -7598,7 +7601,8 @@
                         "module.identity-card",
                         "module.trio-qr",
                         "module.product-look",
-                        "module.images-legend"
+                        "module.images-legend",
+                        "module.duo-image"
                       ]
                     },
                     "id": {
@@ -7670,7 +7674,8 @@
                         "module.identity-card",
                         "module.trio-qr",
                         "module.product-look",
-                        "module.images-legend"
+                        "module.images-legend",
+                        "module.duo-image"
                       ]
                     },
                     "id": {
@@ -7725,7 +7730,8 @@
                         "module.identity-card",
                         "module.trio-qr",
                         "module.product-look",
-                        "module.images-legend"
+                        "module.images-legend",
+                        "module.duo-image"
                       ]
                     },
                     "id": {
@@ -7797,7 +7803,8 @@
                         "module.identity-card",
                         "module.trio-qr",
                         "module.product-look",
-                        "module.images-legend"
+                        "module.images-legend",
+                        "module.duo-image"
                       ]
                     },
                     "id": {
@@ -7852,7 +7859,8 @@
                         "module.identity-card",
                         "module.trio-qr",
                         "module.product-look",
-                        "module.images-legend"
+                        "module.images-legend",
+                        "module.duo-image"
                       ]
                     },
                     "id": {
@@ -7937,7 +7945,8 @@
                         "module.identity-card",
                         "module.trio-qr",
                         "module.product-look",
-                        "module.images-legend"
+                        "module.images-legend",
+                        "module.duo-image"
                       ]
                     },
                     "id": {
@@ -7992,7 +8001,8 @@
                         "module.identity-card",
                         "module.trio-qr",
                         "module.product-look",
-                        "module.images-legend"
+                        "module.images-legend",
+                        "module.duo-image"
                       ]
                     },
                     "id": {
@@ -8047,7 +8057,8 @@
                         "module.identity-card",
                         "module.trio-qr",
                         "module.product-look",
-                        "module.images-legend"
+                        "module.images-legend",
+                        "module.duo-image"
                       ]
                     },
                     "id": {
@@ -8102,7 +8113,8 @@
                         "module.identity-card",
                         "module.trio-qr",
                         "module.product-look",
-                        "module.images-legend"
+                        "module.images-legend",
+                        "module.duo-image"
                       ]
                     },
                     "id": {
@@ -8206,7 +8218,8 @@
                         "module.identity-card",
                         "module.trio-qr",
                         "module.product-look",
-                        "module.images-legend"
+                        "module.images-legend",
+                        "module.duo-image"
                       ]
                     },
                     "id": {
@@ -8305,6 +8318,78 @@
                           "type": "string"
                         },
                         "Label": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "media.image",
+                        "module.slider-article",
+                        "module.paragraphe",
+                        "module.duo",
+                        "media.video",
+                        "module.block-edito-long",
+                        "module.ligne-produit",
+                        "module.produit-edito",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr",
+                        "module.product-look",
+                        "module.images-legend",
+                        "module.duo-image"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Intro": {
+                      "type": "string"
+                    },
+                    "BlockLeft": {
+                      "type": "object",
+                      "required": [
+                        "id"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "image": {
+                          "type": "string"
+                        },
+                        "Title": {
+                          "type": "string"
+                        },
+                        "Text": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "BlockRight": {
+                      "type": "object",
+                      "required": [
+                        "id"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "image": {
+                          "type": "string"
+                        },
+                        "Title": {
+                          "type": "string"
+                        },
+                        "Text": {
                           "type": "string"
                         }
                       }
@@ -8455,7 +8540,8 @@
                         "module.identity-card",
                         "module.trio-qr",
                         "module.product-look",
-                        "module.images-legend"
+                        "module.images-legend",
+                        "module.duo-image"
                       ]
                     },
                     "id": {
@@ -8493,7 +8579,8 @@
                         "module.identity-card",
                         "module.trio-qr",
                         "module.product-look",
-                        "module.images-legend"
+                        "module.images-legend",
+                        "module.duo-image"
                       ]
                     },
                     "id": {
@@ -8576,7 +8663,8 @@
                         "module.identity-card",
                         "module.trio-qr",
                         "module.product-look",
-                        "module.images-legend"
+                        "module.images-legend",
+                        "module.duo-image"
                       ]
                     },
                     "id": {
@@ -8616,7 +8704,8 @@
                         "module.identity-card",
                         "module.trio-qr",
                         "module.product-look",
-                        "module.images-legend"
+                        "module.images-legend",
+                        "module.duo-image"
                       ]
                     },
                     "id": {
@@ -8688,7 +8777,8 @@
                         "module.identity-card",
                         "module.trio-qr",
                         "module.product-look",
-                        "module.images-legend"
+                        "module.images-legend",
+                        "module.duo-image"
                       ]
                     },
                     "id": {
@@ -8743,7 +8833,8 @@
                         "module.identity-card",
                         "module.trio-qr",
                         "module.product-look",
-                        "module.images-legend"
+                        "module.images-legend",
+                        "module.duo-image"
                       ]
                     },
                     "id": {
@@ -8815,7 +8906,8 @@
                         "module.identity-card",
                         "module.trio-qr",
                         "module.product-look",
-                        "module.images-legend"
+                        "module.images-legend",
+                        "module.duo-image"
                       ]
                     },
                     "id": {
@@ -8870,7 +8962,8 @@
                         "module.identity-card",
                         "module.trio-qr",
                         "module.product-look",
-                        "module.images-legend"
+                        "module.images-legend",
+                        "module.duo-image"
                       ]
                     },
                     "id": {
@@ -8955,7 +9048,8 @@
                         "module.identity-card",
                         "module.trio-qr",
                         "module.product-look",
-                        "module.images-legend"
+                        "module.images-legend",
+                        "module.duo-image"
                       ]
                     },
                     "id": {
@@ -9010,7 +9104,8 @@
                         "module.identity-card",
                         "module.trio-qr",
                         "module.product-look",
-                        "module.images-legend"
+                        "module.images-legend",
+                        "module.duo-image"
                       ]
                     },
                     "id": {
@@ -9065,7 +9160,8 @@
                         "module.identity-card",
                         "module.trio-qr",
                         "module.product-look",
-                        "module.images-legend"
+                        "module.images-legend",
+                        "module.duo-image"
                       ]
                     },
                     "id": {
@@ -9120,7 +9216,8 @@
                         "module.identity-card",
                         "module.trio-qr",
                         "module.product-look",
-                        "module.images-legend"
+                        "module.images-legend",
+                        "module.duo-image"
                       ]
                     },
                     "id": {
@@ -9224,7 +9321,8 @@
                         "module.identity-card",
                         "module.trio-qr",
                         "module.product-look",
-                        "module.images-legend"
+                        "module.images-legend",
+                        "module.duo-image"
                       ]
                     },
                     "id": {
@@ -9323,6 +9421,78 @@
                           "type": "string"
                         },
                         "Label": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "media.image",
+                        "module.slider-article",
+                        "module.paragraphe",
+                        "module.duo",
+                        "media.video",
+                        "module.block-edito-long",
+                        "module.ligne-produit",
+                        "module.produit-edito",
+                        "module.duo-qr",
+                        "module.identity-card",
+                        "module.trio-qr",
+                        "module.product-look",
+                        "module.images-legend",
+                        "module.duo-image"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Intro": {
+                      "type": "string"
+                    },
+                    "BlockLeft": {
+                      "type": "object",
+                      "required": [
+                        "id"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "image": {
+                          "type": "string"
+                        },
+                        "Title": {
+                          "type": "string"
+                        },
+                        "Text": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "BlockRight": {
+                      "type": "object",
+                      "required": [
+                        "id"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "image": {
+                          "type": "string"
+                        },
+                        "Title": {
+                          "type": "string"
+                        },
+                        "Text": {
                           "type": "string"
                         }
                       }
