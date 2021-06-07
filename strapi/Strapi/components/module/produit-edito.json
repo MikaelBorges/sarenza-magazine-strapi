@@ -10,9 +10,6 @@
     "Title": {
       "type": "string"
     },
-    "Text": {
-      "type": "text"
-    },
     "CTA": {
       "type": "component",
       "repeatable": false,
@@ -24,6 +21,9 @@
       "component": "module.vignette",
       "max": 12,
       "min": 4
+    },
+    "Text": {
+      "type": "richtext"
     }
   }
 }
