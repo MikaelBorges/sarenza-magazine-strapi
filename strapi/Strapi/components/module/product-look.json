@@ -2,15 +2,13 @@
   "collectionName": "components_module_product_looks",
   "info": {
     "name": "Product-Look",
-    "icon": "adjust"
+    "icon": "adjust",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "Title": {
       "type": "string"
-    },
-    "Text": {
-      "type": "text"
     },
     "CTA": {
       "type": "component",
@@ -26,6 +24,9 @@
       "type": "component",
       "repeatable": false,
       "component": "media.image"
+    },
+    "Text": {
+      "type": "richtext"
     }
   }
 }
