@@ -21,14 +21,13 @@ docker-compose push
 
 ### Variables d'environnement
 
-helm upgrade --recreate-pods -i strapi-dev ./helm/sarenza-digitalexperience-cms-strapi --tiller-namespace digitalexperience-dev-tiller --namespace digitalexperience-dev
+helm upgrade --recreate-pods -i strapi-dev ./helm/sarenza-digitalexperience-cms-strapi --namespace digitalexperience-dev
 
 #### dev
 ---
 | clé              | value                           |
 |------------------|---------------------------------|
 | namespace        | `digitalexperience-dev`         |
-| tiller-namespace | `digitalexperience-dev-tiller`  |
 | strapi-db name   | `strapi-db-dev`                 |
 | strapi name      | `strapi-dev`                    |
 | project          | `srz-prj-a5a67395`              |
@@ -42,7 +41,6 @@ helm upgrade --recreate-pods -i strapi-dev ./helm/sarenza-digitalexperience-cms-
 | clé              | value                           |
 |------------------|---------------------------------|
 | namespace        | `digitalexperience`             |
-| tiller-namespace | `digitalexperience-tiller`      |
 | strapi-db name   | `strapi-db`                     |
 | strapi name      | `strapi`                        |
 | project          | `srz-prj-ec4f7b6b`              |
@@ -89,10 +87,10 @@ $ gcloud container clusters get-credentials [credentials] --zone europe-west1-b 
 kubectl create --namespace [namespace] configmap init-database-strapi --from-file=helm/sarenza-digitalexperience-cms-database/init.sql
 
 # Create/Update l'app [strapi-db-dev]
-$ helm upgrade -i [strapi-db name] ./helm/sarenza-digitalexperience-cms-database/postgresql --tiller-namespace [tiller-namespace] --namespace [namespace]
+$ helm upgrade -i [strapi-db name] ./helm/sarenza-digitalexperience-cms-database/postgresql --namespace [namespace]
 
 # Create/Update l'app [strapi-dev]
-$ helm upgrade -i [strapi name] ./helm/sarenza-digitalexperience-cms-strapi --tiller-namespace [tiller-namespace] --namespace [namespace]
+$ helm upgrade -i [strapi name] ./helm/sarenza-digitalexperience-cms-strapi --namespace [namespace]
 ```
 
 ### Mapper le `kubernetes` sur son local pour accéder à la BDD par exemple :
@@ -140,11 +138,7 @@ Supprimer les lignes concernant `ingress` dans :
 
 1. Installer `kubernetes-helm`
 ```ps
-/> choco install kubernetes-helm --version 2.14.1 # Version non buggée pour nos charts
-```
-
-```sh
-$ helm init --client-only
+/> choco install kubernetes-helm --version 3.6.1
 ```
 
 ## Connaître son cluster actuel
