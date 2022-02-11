@@ -1,0 +1,24 @@
+
+{
+  "kind": "collectionType",
+  "collectionName": "genders",
+  "info": {
+    "singularName": "gender",
+    "pluralName": "genders",
+    "displayName": "genders"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false,
+    "comment": ""
+  },
+  "attributes": {
+    "Gender": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

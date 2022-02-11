@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_module_helps",
+  "info": {
+    "name": "Help",
+    "icon": "hands-helping"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Text": {
+      "type": "string"
+    },
+    "Link": {
+      "type": "component",
+      "repeatable": true,
+      "component": "input.button"
+    }
+  }
+}

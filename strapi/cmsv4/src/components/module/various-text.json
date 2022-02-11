@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_module_various_texts",
+  "info": {
+    "name": "VariousText",
+    "icon": "align-left"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "richtext"
+    },
+    "Text": {
+      "type": "richtext"
+    }
+  }
+}

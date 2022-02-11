@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_module_product_looks",
+  "info": {
+    "name": "Product-Look",
+    "icon": "adjust",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "CTA": {
+      "type": "component",
+      "repeatable": false,
+      "component": "input.button"
+    },
+    "Vignettes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "module.vignette"
+    },
+    "Image": {
+      "type": "component",
+      "repeatable": false,
+      "component": "media.image"
+    },
+    "Text": {
+      "type": "richtext"
+    }
+  }
+}

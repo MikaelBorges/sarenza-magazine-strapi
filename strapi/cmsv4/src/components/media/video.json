@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_media_videos",
+  "info": {
+    "name": "Video",
+    "icon": "video",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "component",
+      "repeatable": false,
+      "component": "media.image"
+    },
+    "iframe_url": {
+      "type": "string"
+    },
+    "iframe_page": {
+      "type": "string"
+    }
+  }
+}

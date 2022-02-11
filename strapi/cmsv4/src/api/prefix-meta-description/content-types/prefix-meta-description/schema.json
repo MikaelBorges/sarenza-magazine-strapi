@@ -1,0 +1,21 @@
+
+{
+  "kind": "singleType",
+  "collectionName": "prefix_meta_descriptions",
+  "info": {
+    "singularName": "prefix-meta-description",
+    "pluralName": "prefix-meta-descriptions",
+    "displayName": "prefix-meta-description"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true,
+    "comment": ""
+  },
+  "attributes": {
+    "prefix": {
+      "type": "string"
+    }
+  }
+}

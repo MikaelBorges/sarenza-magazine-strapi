@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_module_produit_editos",
+  "info": {
+    "name": "Product-Edito",
+    "icon": "align-center",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "CTA": {
+      "type": "component",
+      "repeatable": false,
+      "component": "input.button"
+    },
+    "Vignette": {
+      "type": "component",
+      "repeatable": true,
+      "component": "module.vignette",
+      "max": 12,
+      "min": 4
+    },
+    "Text": {
+      "type": "richtext"
+    }
+  }
+}

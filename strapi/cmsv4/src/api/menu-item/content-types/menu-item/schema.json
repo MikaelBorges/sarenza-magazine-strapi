@@ -3,13 +3,15 @@
   "kind": "collectionType",
   "collectionName": "menu_items",
   "info": {
-    "name": "menuItem",
-    "description": ""
+    "singularName": "menu-item",
+    "pluralName": "menu-items",
+    "displayName": "menu-item"
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": true,
+    "comment": ""
   },
   "attributes": {
     "category": {

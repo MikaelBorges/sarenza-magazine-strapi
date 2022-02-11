@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_module_marquees",
+  "info": {
+    "name": "Marquee",
+    "icon": "ambulance"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "slowAnimation": {
+      "type": "boolean",
+      "default": false
+    },
+    "fastAnimation": {
+      "type": "boolean",
+      "default": false
+    },
+    "animation": {
+      "type": "boolean",
+      "default": true
+    },
+    "isShow": {
+      "type": "boolean"
+    }
+  }
+}

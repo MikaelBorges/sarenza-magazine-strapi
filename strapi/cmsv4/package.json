@@ -1,0 +1,37 @@
+{
+  "name": "cmsv-4",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "dev": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@strapi/plugin-documentation": "4.0.2",
+    "@strapi/plugin-i18n": "4.0.2",
+    "@strapi/plugin-users-permissions": "4.0.2",
+    "@strapi/strapi": "4.0.2",
+    "faker": "^5.5.3",
+    "meilisearch": "^0.23.0",
+    "pg": "^8.7.1",
+    "slugify": "^1.6.4"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "eac13dbb-ccab-4331-977e-2d698bd9e290"
+  },
+  "engines": {
+    "node": ">=12.x.x <=16.x.x",
+    "npm": ">=6.0.0"
+  },
+  "prettier": {
+    "printWidth": 120
+  },
+  "license": "MIT"
+}

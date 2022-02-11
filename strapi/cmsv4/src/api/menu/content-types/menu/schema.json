@@ -1,0 +1,33 @@
+
+{
+  "kind": "collectionType",
+  "collectionName": "menus",
+  "info": {
+    "singularName": "menu",
+    "pluralName": "menus",
+    "displayName": "menu"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "header": {
+      "type": "string"
+    },
+    "menu_items": {
+      "via": "menu",
+      "collection": "menu-item"
+    },
+    "Url": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "colorText": {
+      "type": "string"
+    }
+  }
+}
