@@ -1,7 +1,7 @@
 {
   "collectionName": "components_footer_country_selectors",
   "info": {
-    "name": "countrySelector",
+    "displayName": "countrySelector",
     "icon": "football-ball"
   },
   "options": {},

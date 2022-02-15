@@ -1,7 +1,7 @@
 {
   "collectionName": "components_module_marquees",
   "info": {
-    "name": "Marquee",
+    "displayName": "Marquee",
     "icon": "ambulance"
   },
   "options": {},

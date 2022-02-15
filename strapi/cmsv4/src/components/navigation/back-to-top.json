@@ -1,7 +1,7 @@
 {
   "collectionName": "components_navigation_back_to_tops",
   "info": {
-    "name": "backToTop",
+    "displayName": "backToTop",
     "icon": "angle-double-up"
   },
   "options": {},

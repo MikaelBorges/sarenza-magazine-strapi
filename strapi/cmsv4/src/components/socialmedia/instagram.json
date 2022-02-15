@@ -1,7 +1,7 @@
 {
   "collectionName": "components_social_media_instagrams",
   "info": {
-    "name": "instagram",
+    "displayName": "instagram",
     "icon": "address-book"
   },
   "options": {},

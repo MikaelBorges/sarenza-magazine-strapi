@@ -1,7 +1,7 @@
 {
   "collectionName": "components_module_newsletters",
   "info": {
-    "name": "Newsletter",
+    "displayName": "Newsletter",
     "icon": "mail-bulk"
   },
   "options": {},

@@ -1,7 +1,7 @@
 {
   "collectionName": "components_module_identity_cards",
   "info": {
-    "name": "IdentityCard",
+    "displayName": "IdentityCard",
     "icon": "address-card"
   },
   "options": {},

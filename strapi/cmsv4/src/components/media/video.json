@@ -1,7 +1,7 @@
 {
   "collectionName": "components_media_videos",
   "info": {
-    "name": "Video",
+    "displayName": "Video",
     "icon": "video",
     "description": ""
   },

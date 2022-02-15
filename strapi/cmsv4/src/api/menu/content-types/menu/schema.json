@@ -1,11 +1,11 @@
-
 {
   "kind": "collectionType",
   "collectionName": "menus",
   "info": {
     "singularName": "menu",
     "pluralName": "menus",
-    "displayName": "menu"
+    "displayName": "menu",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -17,8 +17,10 @@
       "type": "string"
     },
     "menu_items": {
-      "via": "menu",
-      "collection": "menu-item"
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::menu-item.menu-item",
+      "mappedBy": "menu"
     },
     "Url": {
       "type": "string"

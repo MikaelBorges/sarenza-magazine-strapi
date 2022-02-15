@@ -1,7 +1,7 @@
 {
   "collectionName": "components_module_product_cards",
   "info": {
-    "name": "ProductCard",
+    "displayName": "ProductCard",
     "icon": "backward"
   },
   "options": {},

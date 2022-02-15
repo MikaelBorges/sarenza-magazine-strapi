@@ -1,7 +1,7 @@
 {
   "collectionName": "components_module_images_legends",
   "info": {
-    "name": "ImagesLegend",
+    "displayName": "ImagesLegend",
     "icon": "arrow-circle-right"
   },
   "options": {},

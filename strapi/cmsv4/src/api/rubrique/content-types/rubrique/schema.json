@@ -1,4 +1,3 @@
-
 {
   "kind": "collectionType",
   "collectionName": "rubriques",
@@ -13,7 +12,6 @@
     "draftAndPublish": true,
     "comment": ""
   },
-  
   "attributes": {
     "rubrique": {
       "type": "string"
@@ -26,20 +24,10 @@
       "type": "integer"
     },
     "articles": {
-      "via": "rubriques",
-      "collection": "article"
-    },
-    "marquee_top": {
-      "model": "marquee"
-    },
-    "marquee_bottom": {
-      "model": "marquee"
-    },
-    "display_top": {
-      "model": "display-component"
-    },
-    "display_bottom": {
-      "model": "display-component"
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::article.article",
+      "mappedBy": "rubriques"
     }
   }
 }

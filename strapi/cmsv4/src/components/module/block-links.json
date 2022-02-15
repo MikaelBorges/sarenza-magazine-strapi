@@ -1,7 +1,7 @@
 {
   "collectionName": "components_module_block_links",
   "info": {
-    "name": "BlockLinks",
+    "displayName": "BlockLinks",
     "icon": "link"
   },
   "options": {},

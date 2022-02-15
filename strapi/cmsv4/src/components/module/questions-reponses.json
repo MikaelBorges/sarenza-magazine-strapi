@@ -1,7 +1,7 @@
 {
   "collectionName": "components_module_questions_reponses",
   "info": {
-    "name": "QuestionsReponses",
+    "displayName": "QuestionsReponses",
     "icon": "question-circle"
   },
   "options": {},

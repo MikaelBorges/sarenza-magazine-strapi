@@ -1,11 +1,11 @@
-
 {
   "kind": "collectionType",
   "collectionName": "articles",
   "info": {
     "singularName": "article",
     "pluralName": "articles",
-    "displayName": "articles"
+    "displayName": "articles",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -52,14 +52,16 @@
       ]
     },
     "rubriques": {
-      "collection": "rubrique",
-      "via": "articles",
-      "dominant": true
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::rubrique.rubrique",
+      "inversedBy": "articles"
     },
     "tags": {
-      "collection": "tag",
-      "via": "articles",
-      "dominant": true
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tag.tag",
+      "inversedBy": "articles"
     },
     "isHeadline": {
       "type": "boolean",

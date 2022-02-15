@@ -1,7 +1,7 @@
 {
   "collectionName": "components_module_reassurances",
   "info": {
-    "name": "Reassurance",
+    "displayName": "Reassurance",
     "icon": "chart-area"
   },
   "options": {},

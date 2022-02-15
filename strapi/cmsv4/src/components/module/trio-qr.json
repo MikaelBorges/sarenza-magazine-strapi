@@ -1,7 +1,7 @@
 {
   "collectionName": "components_module_trio_qrs",
   "info": {
-    "name": "TrioQR",
+    "displayName": "TrioQR",
     "icon": "question"
   },
   "options": {},

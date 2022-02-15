@@ -1,7 +1,7 @@
 {
   "collectionName": "components_module_duo_qrs",
   "info": {
-    "name": "DuoQR",
+    "displayName": "DuoQR",
     "icon": "address-card"
   },
   "options": {},

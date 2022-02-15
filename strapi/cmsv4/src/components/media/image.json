@@ -1,7 +1,7 @@
 {
   "collectionName": "components_media_images",
   "info": {
-    "name": "Image",
+    "displayName": "Image",
     "icon": "photo-video"
   },
   "options": {},

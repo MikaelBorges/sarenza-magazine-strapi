@@ -1,7 +1,7 @@
 {
   "collectionName": "components_module_partners",
   "info": {
-    "name": "Partners",
+    "displayName": "Partners",
     "icon": "parachute-box"
   },
   "options": {},

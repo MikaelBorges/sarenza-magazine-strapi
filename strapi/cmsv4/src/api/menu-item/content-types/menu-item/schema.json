@@ -1,4 +1,3 @@
-
 {
   "kind": "collectionType",
   "collectionName": "menu_items",
@@ -18,8 +17,10 @@
       "type": "string"
     },
     "menu": {
-      "model": "menu",
-      "via": "menu_items"
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::menu.menu",
+      "inversedBy": "menu_items"
     },
     "libelle": {
       "type": "string"

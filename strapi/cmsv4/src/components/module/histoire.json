@@ -1,7 +1,7 @@
 {
   "collectionName": "components_module_histoires",
   "info": {
-    "name": "Histoire",
+    "displayName": "Histoire",
     "icon": "align-justify"
   },
   "options": {},

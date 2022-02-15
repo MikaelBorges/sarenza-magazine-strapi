@@ -1,7 +1,7 @@
 {
   "collectionName": "components_module_slider_articles",
   "info": {
-    "name": "sliderArticle",
+    "displayName": "sliderArticle",
     "icon": "arrows-alt-h"
   },
   "options": {},

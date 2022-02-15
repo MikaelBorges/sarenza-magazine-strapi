@@ -1,7 +1,7 @@
 {
   "collectionName": "components_module_partner_icons",
   "info": {
-    "name": "PartnerIcon",
+    "displayName": "PartnerIcon",
     "icon": "plane-departure"
   },
   "options": {},
