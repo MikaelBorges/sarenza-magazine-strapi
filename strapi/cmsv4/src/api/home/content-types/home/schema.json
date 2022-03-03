@@ -8,6 +8,8 @@
     "description": ""
   },
   "options": {
+    "increments": true,
+    "timestamps": true,
     "draftAndPublish": true
   },
   "pluginOptions": {},
@@ -15,11 +17,33 @@
     "title": {
       "type": "string"
     },
-    "logo": {
+    "shortDescription": {
       "type": "string"
     },
-    "description": {
-      "type": "richtext"
+    "marqueeTop": {
+      "type": "component",
+      "repeatable": false,
+      "component": "module.marquee"
+    },
+    "marquee": {
+      "type": "component",
+      "repeatable": false,
+      "component": "module.marquee"
+    },
+    "displayTop": {
+      "type": "component",
+      "repeatable": false,
+      "component": "module.display"
+    },
+    "displayBottom": {
+      "type": "component",
+      "repeatable": false,
+      "component": "module.display"
+    },
+    "articles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::article.article"
     }
   }
 }

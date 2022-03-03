@@ -1,9 +1,16 @@
-'use strict';
+"use strict";
 
 /**
  * menu-item router.
  */
 
-const { createCoreRouter } = require('@strapi/strapi').factories;
+const { createCoreRouter } = require("@strapi/strapi").factories;
 
-module.exports = createCoreRouter('api::menu-item.menu-item');
+module.exports = createCoreRouter("api::menu-item.menu-item", {
+  only: ["find"],
+  config: {
+    find: {
+      auth: false,
+    },
+  },
+});

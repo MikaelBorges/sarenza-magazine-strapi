@@ -1,9 +1,16 @@
-'use strict';
+"use strict";
 
 /**
  * marquee router.
  */
 
-const { createCoreRouter } = require('@strapi/strapi').factories;
+const { createCoreRouter } = require("@strapi/strapi").factories;
 
-module.exports = createCoreRouter('api::marquee.marquee');
+module.exports = createCoreRouter("api::marquee.marquee", {
+  only: ["find"],
+  config: {
+    find: {
+      auth: false,
+    },
+  },
+});
