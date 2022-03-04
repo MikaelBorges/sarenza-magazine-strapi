@@ -39,11 +39,6 @@
       "type": "component",
       "repeatable": false,
       "component": "module.display"
-    },
-    "articles": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::article.article"
     }
   }
 }
