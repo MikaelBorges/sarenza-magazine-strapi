@@ -39,6 +39,11 @@
       "type": "component",
       "repeatable": false,
       "component": "module.display"
+    },
+    "ArticleUne": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::article.article"
     }
   }
 }
