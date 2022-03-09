@@ -146,9 +146,10 @@ async function deleteTables() {
   await client.end();
 }
 
-async function fetchSourceToTarget({ model, transformTo = (data) => data, doAfter = async (result) => result }) {
+async function fetchSourceToTarget({ model, transformTo = (data) => data, doAfter = async (result) => result, query = "" }) {
   try {
-    const results = await fetch(source + "/" + model + "s").then((res) => res.json());
+    const url = source + "/" + model + "s" + "?_start=0&_limit=400";
+    const results = await fetch(url).then((res) => res.json());
     for (const result of results) {
       const data = transformTo(result);
       data.publishedAt = new Date();
