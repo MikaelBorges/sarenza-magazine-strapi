@@ -6,8 +6,6 @@ const { Client } = require("pg");
  *  article controller
  */
 
-const source = "http://strapi.prd.sarenza.corp";
-
 const { createCoreController } = require("@strapi/strapi").factories;
 
 module.exports = createCoreController("api::article.article", () => {
@@ -146,8 +144,9 @@ async function deleteTables() {
   await client.end();
 }
 
-async function fetchSourceToTarget({ model, transformTo = (data) => data, doAfter = async (result) => result, query = "" }) {
+async function fetchSourceToTarget({ model, transformTo = (data) => data, doAfter = async (result) => result }) {
   try {
+    const source = await getSource();
     const url = source + "/" + model + "s" + "?_start=0&_limit=400";
     const results = await fetch(url).then((res) => res.json());
     for (const result of results) {
@@ -161,9 +160,16 @@ async function fetchSourceToTarget({ model, transformTo = (data) => data, doAfte
   }
 }
 
+async function getSource() {
+  const found = await strapi.entityService.findMany("api::configuration.configuration", {
+    filters: { key: "source" },
+  });
+  return found?.[0]?.value || "http://strapi.prd.sarenza.corp";
+}
+
 async function createOrUpdate(model, id, data) {
   const found = await strapi.entityService.findOne(`api::${model}.${model}`, id);
- // console.log("found", found);
+  // console.log("found", found);
   if (found === null) {
     try {
       await strapi.entityService.create(`api::${model}.${model}`, { data });
