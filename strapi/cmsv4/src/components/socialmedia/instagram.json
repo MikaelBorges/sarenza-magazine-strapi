@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_social_media_instagrams",
+  "info": {
+    "displayName": "instagram",
+    "icon": "address-book"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_block_text_block_texts",
+  "info": {
+    "displayName": "BlockText",
+    "icon": "align-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Text": {
+      "type": "richtext"
+    }
+  }
+}

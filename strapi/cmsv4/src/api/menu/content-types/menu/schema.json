@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "menus",
+  "info": {
+    "singularName": "menu",
+    "pluralName": "menus",
+    "displayName": "menu",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "header": {
+      "type": "string"
+    },
+    "menu_items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::menu-item.menu-item",
+      "mappedBy": "menu"
+    },
+    "Url": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "colorText": {
+      "type": "string"
+    }
+  }
+}

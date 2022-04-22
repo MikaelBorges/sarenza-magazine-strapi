@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Metadatas",
+  "info": {
+    "singularName": "tag",
+    "pluralName": "tags",
+    "displayName": "tag"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "articles": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::article.article",
+      "mappedBy": "tags"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "menu_items",
+  "info": {
+    "singularName": "menu-item",
+    "pluralName": "menu-items",
+    "displayName": "menu-item"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true,
+    "comment": ""
+  },
+  "attributes": {
+    "category": {
+      "type": "string"
+    },
+    "menu": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::menu.menu",
+      "inversedBy": "menu_items"
+    },
+    "libelle": {
+      "type": "string"
+    },
+    "position": {
+      "type": "integer"
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "mega-menu.links"
+    }
+  }
+}

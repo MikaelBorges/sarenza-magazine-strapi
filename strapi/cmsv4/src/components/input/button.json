@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_input_buttons",
+  "info": {
+    "displayName": "button",
+    "icon": "allergies"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+
+{
+  "kind": "collectionType",
+  "collectionName": "marquees",
+  "info": {
+    "singularName": "marquee",
+    "pluralName": "marquees",
+    "displayName": "marquee"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true,
+    "comment": ""
+  },
+  "attributes": {
+    "MarqueeComponent": {
+      "type": "component",
+      "repeatable": false,
+      "component": "module.marquee"
+    }
+  }
+}

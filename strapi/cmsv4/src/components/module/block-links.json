@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_module_block_links",
+  "info": {
+    "displayName": "BlockLinks",
+    "icon": "link"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "link": {
+      "type": "component",
+      "repeatable": true,
+      "component": "input.button",
+      "max": 8
+    }
+  }
+}

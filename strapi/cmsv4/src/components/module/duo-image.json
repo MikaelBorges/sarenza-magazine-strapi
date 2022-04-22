@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_module_duo_images",
+  "info": {
+    "displayName": "DuoImage",
+    "icon": "images"
+  },
+  "options": {},
+  "attributes": {
+    "Intro": {
+      "type": "richtext"
+    },
+    "BlockLeft": {
+      "type": "component",
+      "repeatable": false,
+      "component": "module.duo-image-text"
+    },
+    "BlockRight": {
+      "type": "component",
+      "repeatable": false,
+      "component": "module.duo-image-text"
+    }
+  }
+}

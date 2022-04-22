@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_module_reviews",
+  "info": {
+    "displayName": "Reviews",
+    "icon": "star"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Rate": {
+      "type": "enumeration",
+      "enum": [
+        "rate1",
+        "rate2",
+        "rate3",
+        "rate4",
+        "rate5"
+      ]
+    },
+    "MaxRate": {
+      "type": "string"
+    },
+    "Votes": {
+      "type": "component",
+      "repeatable": false,
+      "component": "input.button"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_navigation_back_to_tops",
+  "info": {
+    "displayName": "backToTop",
+    "icon": "angle-double-up"
+  },
+  "options": {},
+  "attributes": {
+    "Url": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_module_footer_links",
+  "info": {
+    "displayName": "FooterLink",
+    "icon": "external-link-square-alt"
+  },
+  "options": {},
+  "attributes": {
+    "Text": {
+      "type": "string"
+    },
+    "Url": {
+      "type": "string"
+    },
+    "DataContent": {
+      "type": "string"
+    },
+    "class": {
+      "type": "string"
+    }
+  }
+}

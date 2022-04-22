@@ -22,11 +22,11 @@ ENV DOCKER true
 
 COPY ./Strapi .
 
-RUN yarn install --production --frozen-lockfile && dos2unix ./init.sh && chmod +x ./init.sh && sudo ./init.sh 
+RUN NODE_TLS_REJECT_UNAUTHORIZED=0 yarn install --production --frozen-lockfile && dos2unix ./init.sh && chmod +x ./init.sh && sudo ./init.sh 
 
 WORKDIR /srv/app
 
-RUN yarn global add strapi@${strapi_version} && NODE_ENV=production strapi build
+RUN NODE_TLS_REJECT_UNAUTHORIZED=0 yarn global add strapi@${strapi_version} && NODE_ENV=production strapi build
 
 COPY ./entrypoint.sh /usr/local/bin/
 

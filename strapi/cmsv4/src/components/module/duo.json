@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_module_duos",
+  "info": {
+    "displayName": "Duo",
+    "icon": "border-all",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "input.button"
+    },
+    "duo_paragraphe": {
+      "type": "richtext"
+    },
+    "duo_image": {
+      "type": "component",
+      "repeatable": false,
+      "component": "media.image"
+    }
+  }
+}

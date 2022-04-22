@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_module_vignettes",
+  "info": {
+    "displayName": "vignette",
+    "icon": "clone"
+  },
+  "options": {},
+  "attributes": {
+    "visuelUrl": {
+      "type": "string"
+    },
+    "brand": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "statusLabel": {
+      "type": "string"
+    },
+    "pcid": {
+      "type": "biginteger"
+    }
+  }
+}

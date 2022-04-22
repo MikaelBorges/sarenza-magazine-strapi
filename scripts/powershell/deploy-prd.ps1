@@ -1,2 +1,2 @@
 gcloud container clusters get-credentials srz-gke-prd-36d82766 --zone europe-west1-b --project srz-prj-ec4f7b6b
-helm upgrade --recreate-pods -i strapi ./helm/sarenza-digitalexperience-cms-strapi --namespace digitalexperience
+helm upgrade --recreate-pods -i strapi ./helm/sarenza-digitalexperience-cms-strapi --tiller-namespace digitalexperience-tiller --namespace digitalexperience

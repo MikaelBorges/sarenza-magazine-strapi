@@ -29,6 +29,7 @@ $project='srz-prj-a5a67395'
 $subscription='srz-gke-hp-99aad13f'
 $replicaCount=2
 $rebuildContainer=$true
+$tiller="digitalexperience-tiller"
 $ns="digitalexperience"
 
 switch ($envSelection)
@@ -55,6 +56,8 @@ $Env:VERSION = $version
 
 if(-not ($envSelection -eq '4'))
 {    
+    $tiller="digitalexperience-$env-tiller"
+    Write-Host "Tiller setted - $tiller"
     $ns="digitalexperience-$env"
     Write-Host "Namespace setted - $ns"
 }
@@ -85,4 +88,4 @@ if($rebuildContainer -eq $true)
 
 gcloud container clusters get-credentials $subscription --zone europe-west1-b --project $project
 
-helm upgrade -i $forceDeployParameter --set replicaCount=$replicaCount --set image.tag=$version --wait  strapi ./helm/sarenza-digitalexperience-cms-strapi --namespace $ns
+helm upgrade -i $forceDeployParameter --set replicaCount=$replicaCount --set image.tag=$version --wait  strapi ./helm/sarenza-digitalexperience-cms-strapi --tiller-namespace $tiller --namespace $ns

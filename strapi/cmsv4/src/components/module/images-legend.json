@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_module_images_legends",
+  "info": {
+    "displayName": "ImagesLegend",
+    "icon": "arrow-circle-right"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Text": {
+      "type": "text"
+    },
+    "VerticalImage": {
+      "type": "component",
+      "repeatable": false,
+      "component": "media.image"
+    },
+    "ImageText": {
+      "type": "component",
+      "repeatable": false,
+      "component": "module.image-text"
+    },
+    "ImageTextOptional": {
+      "type": "component",
+      "repeatable": false,
+      "component": "module.image-text"
+    }
+  }
+}

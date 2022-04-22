@@ -1,0 +1,53 @@
+{
+  "collectionName": "components_module_partner_icons",
+  "info": {
+    "displayName": "PartnerIcon",
+    "icon": "plane-departure"
+  },
+  "options": {},
+  "attributes": {
+    "PaymentPartner": {
+      "type": "enumeration",
+      "enum": [
+        "cb",
+        "illicado",
+        "paylib",
+        "paypal",
+        "spirit",
+        "mastercard",
+        "maestro",
+        "bpost",
+        "pickup",
+        "trustedShops",
+        "fevad"
+      ]
+    },
+    "ShippingPartner": {
+      "type": "enumeration",
+      "enum": [
+        "bpost",
+        "pickup"
+      ]
+    },
+    "QualityPartner": {
+      "type": "enumeration",
+      "enum": [
+        "trustedShops",
+        "fevad"
+      ]
+    },
+    "text": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "liClass": {
+      "type": "string",
+      "default": "null"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

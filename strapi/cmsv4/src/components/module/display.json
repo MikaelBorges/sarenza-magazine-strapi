@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_module_displays",
+  "info": {
+    "displayName": "Display",
+    "icon": "audio-description"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "input.button"
+    },
+    "whiteTheme": {
+      "type": "boolean",
+      "default": false
+    },
+    "hexaBackground": {
+      "type": "string",
+      "default": "#F2F2F2"
+    }
+  }
+}

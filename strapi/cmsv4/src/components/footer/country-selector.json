@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_footer_country_selectors",
+  "info": {
+    "displayName": "countrySelector",
+    "icon": "football-ball"
+  },
+  "options": {},
+  "attributes": {
+    "Text": {
+      "type": "string"
+    },
+    "Link": {
+      "type": "string"
+    },
+    "domain": {
+      "type": "enumeration",
+      "enum": [
+        "fr",
+        "ch",
+        "be",
+        "lu",
+        "nl",
+        "de",
+        "it",
+        "es",
+        "eu",
+        "dk"
+      ]
+    },
+    "isCurrent": {
+      "type": "boolean"
+    }
+  }
+}

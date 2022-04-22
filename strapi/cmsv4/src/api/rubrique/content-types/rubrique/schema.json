@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rubriques",
+  "info": {
+    "singularName": "rubrique",
+    "pluralName": "rubriques",
+    "displayName": "rubrique",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true,
+    "comment": ""
+  },
+  "attributes": {
+    "rubrique": {
+      "type": "string"
+    },
+    "url": {
+      "type": "uid",
+      "targetField": "rubrique"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "articles": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::article.article",
+      "mappedBy": "rubriques"
+    },
+    "display_bottom": {
+      "type": "component",
+      "repeatable": false,
+      "component": "module.display"
+    },
+    "display_top": {
+      "type": "component",
+      "repeatable": false,
+      "component": "module.display"
+    },
+    "marquee_top": {
+      "type": "component",
+      "repeatable": false,
+      "component": "module.marquee"
+    },
+    "marquee_bottom": {
+      "type": "component",
+      "repeatable": false,
+      "component": "module.marquee"
+    }
+  }
+}

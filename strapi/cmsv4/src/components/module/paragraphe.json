@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_module_paragraphes",
+  "info": {
+    "displayName": "paragraphe",
+    "icon": "angle-double-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "verbatim": {
+      "type": "string"
+    },
+    "Texte": {
+      "type": "richtext"
+    },
+    "positionVerbatim": {
+      "type": "boolean"
+    }
+  }
+}

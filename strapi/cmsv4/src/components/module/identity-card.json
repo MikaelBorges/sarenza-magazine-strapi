@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_module_identity_cards",
+  "info": {
+    "displayName": "IdentityCard",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "Text": {
+      "type": "richtext"
+    },
+    "BackgroundColor": {
+      "type": "string"
+    },
+    "Picture": {
+      "type": "component",
+      "repeatable": false,
+      "component": "media.image"
+    }
+  }
+}
